@@ -9,7 +9,7 @@ The API will return the response status code, response headers, and a response b
 
 ## REST API
 
-### SignUp (create new user)
+### SignUp
 
 -----
 
@@ -44,7 +44,7 @@ Json Syntax
 }
 ```
 
-### SignIn (login)
+### SignIn
 
 -----
 
@@ -70,4 +70,36 @@ Body
 - Wrong Credentials Response
 ```
 HTTP Status code 401
+```
+
+### Membership Activation
+
+-----
+
+```
+/api/membership/activate
+```
+Body
+```json
+{
+  "license": "LU999999999999999999",
+  "device": "334340280EA00B10"
+}
+```
+Json Syntax
+- `license` - The license to activate
+- `device` - The android/iOS device id to pair with the license
+- Successful Activation Response
+```json
+{
+  "type": "OK",
+  "message": "License activated successfully!"
+}
+```
+- Wrong Membership Response
+```json
+{
+    "type": "ERROR",
+    "message": "License is not valid"
+}
 ```
