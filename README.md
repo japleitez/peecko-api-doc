@@ -9,7 +9,7 @@ The API will return the response status code, response headers, and a response b
 
 ## Authenticating
 The SignIn service authenticates the user and returns a token. 
-This token has to be sent in all subsequent calls to the API services as part of the HTTP Header:  
+This token has to be sent in all subsequent calls to the API services as part of the HTTP headers:  
 
 [ ] **Header**
 - key: Authorization
