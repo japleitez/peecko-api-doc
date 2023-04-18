@@ -2,18 +2,18 @@
 Backend application to serve Peecko Android and iOS apps
 
 ## About the Peecko REST API
-This documentation describes how to use the Peecko REST API using Postman./
-When you make a request to the Peecko REST API, you will specify the HTTP method and a path./
-You might also specify request headers, query or body parameters in JSON format./
-The API will return the response status code, response headers, and a response body./
+This documentation describes how to use the Peecko REST API using Postman.  
+When you make a request to the Peecko REST API, you will specify the HTTP method and a path.  
+You might also specify request headers, query or body parameters in JSON format.  
+The API will return the response status code, response headers, and a response body.  
 
 ## Authenticating
-The SignIn service authenticates the user and returns a token./
-This token has to be sent in the HTTP header of all subsequent calls to the API services./
+The SignIn service authenticates the user and returns a token.  
+This token has to be sent in the HTTP header of all subsequent calls to the API services.  
 
 [ ] **Header**
-- 'key'   Authorization
-- 'value' Bearer + blank space + token
+- key: Authorization
+- value: Bearer + blank space + <token>
 
 ## REST API
 
