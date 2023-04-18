@@ -9,12 +9,14 @@ The API will return the response status code, response headers, and a response b
 
 ## REST API
 
-### Create new user
+### SignUp (create new user)
+
+-----
 
 ```
 /api/auth/signup
 ```
-Signup Body
+Body
 ```json
 {
 "name": "Jose Pleitez",
@@ -22,12 +24,11 @@ Signup Body
 "password": "12345678"
 }
 ```
-Syntax
+Json Syntax
 - `name` - The full name of the user
 - `username` - The email address of the user
 - `password` - The password of the user
 
-Signup Responses
 - Successful Signup Response
 ```json
 {
@@ -43,22 +44,21 @@ Signup Responses
 }
 ```
 
-### Login
+### SignIn (login)
 
 -----
 
 ```
 /api/auth/signin
 ```
-Login Body
+Body
 ```json
 {
 "username": "jose.pleitez@gmail.com",
 "password": "12345678"
 }
 ```
-Login Responses
-- Successful Login Response
+- Successful SignIn Response
 ```json
 {
 "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb3NlLnBsZWl0ZXpAZ21haWwuY29tIiwiaWF0IjoxNjgxODIyODEyLCJleHAiOjE2ODE5MDkyMTJ9.prusaGXL276v7ZEsrA5oP5mqOenusQ4vnZW-0qDNMJ_L3ZJ2Vhc5nV43NE_X13rkFfhEIP1ShVkgOjWKbY2Flg",
@@ -67,7 +67,7 @@ Login Responses
 "roles": [ "USER"]
 }
 ```
-- Invalid Login Response
+- Wrong Credentials Response
 ```
 HTTP Status code 401
 ```
