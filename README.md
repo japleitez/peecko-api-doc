@@ -84,7 +84,7 @@ HTTP Status code 401
 ```
 /api/membership/activate
 ```
-[ ] *Body*
+[ ] **Body**
 ```json
 {
   "license": "LU999999999999999999",
@@ -95,7 +95,7 @@ Json Syntax
 - `license` - The license to activate
 - `device` - The android/iOS device id to pair with the license
 
-[ ] *Responses*
+[ ] **Responses**
 
 - Successful Activation Response
 ```json
