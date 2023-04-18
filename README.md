@@ -101,11 +101,11 @@ HTTP Status code 401
 ```
 Json Syntax
 - `license` - The license to activate
-- `device` - The android/iOS device id to pair with the license
+- `device` - The device id to pair with the license
 
 [ ] **Responses**
 
-- Successful Activation Response
+- Successful Membership Response
 ```json
 {
   "type": "OK",
