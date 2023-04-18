@@ -16,7 +16,7 @@ The API will return the response status code, response headers, and a response b
 ```
 /api/auth/signup
 ```
-Body
+[ ] Body
 ```json
 {
 "name": "Jose Pleitez",
@@ -28,6 +28,8 @@ Json Syntax
 - `name` - The full name of the user
 - `username` - The email address of the user
 - `password` - The password of the user
+
+[ ] Responses
 
 - Successful Signup Response
 ```json
