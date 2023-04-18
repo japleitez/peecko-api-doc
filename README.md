@@ -53,13 +53,16 @@ Json Syntax
 ```
 /api/auth/signin
 ```
-Body
+[*] Body
 ```json
 {
 "username": "jose.pleitez@gmail.com",
 "password": "12345678"
 }
 ```
+
+[ ] Responses
+
 - Successful SignIn Response
 ```json
 {
@@ -81,7 +84,7 @@ HTTP Status code 401
 ```
 /api/membership/activate
 ```
-Body
+[ ] *Body*
 ```json
 {
   "license": "LU999999999999999999",
@@ -91,6 +94,9 @@ Body
 Json Syntax
 - `license` - The license to activate
 - `device` - The android/iOS device id to pair with the license
+
+[ ] *Responses*
+
 - Successful Activation Response
 ```json
 {
