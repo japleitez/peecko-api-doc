@@ -16,7 +16,7 @@ The API will return the response status code, response headers, and a response b
 ```
 /api/auth/signup
 ```
-[ ] Body
+[ ] **Body**
 ```json
 {
 "name": "Jose Pleitez",
@@ -29,7 +29,7 @@ Json Syntax
 - `username` - The email address of the user
 - `password` - The password of the user
 
-[ ] Responses
+[ ] **Responses**
 
 - Successful Signup Response
 ```json
@@ -53,7 +53,7 @@ Json Syntax
 ```
 /api/auth/signin
 ```
-[*] Body
+[ ] **Body**
 ```json
 {
 "username": "jose.pleitez@gmail.com",
@@ -61,7 +61,7 @@ Json Syntax
 }
 ```
 
-[ ] Responses
+[ ] **Responses**
 
 - Successful SignIn Response
 ```json
@@ -94,6 +94,10 @@ HTTP Status code 401
 Json Syntax
 - `license` - The license to activate
 - `device` - The android/iOS device id to pair with the license
+
+[ ] **Header**
+- 'key'   Authorization
+- 'value' Bearer + blank space + token
 
 [ ] **Responses**
 
