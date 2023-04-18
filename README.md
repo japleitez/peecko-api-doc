@@ -7,6 +7,13 @@ When you make a request to the Peecko REST API, you will specify the HTTP method
 You might also specify request headers, query or body data parameters in JSON format
 The API will return the response status code, response headers, and a response body
 
+## Authenticating
+The SignIn service authenticates the user and returns a token
+Such token has to be sent in the HTTP header of all subsequent calls to the API services
+[ ] **Header**
+- 'key'   Authorization
+- 'value' Bearer + blank space + token
+
 ## REST API
 
 ### SignUp
@@ -94,10 +101,6 @@ HTTP Status code 401
 Json Syntax
 - `license` - The license to activate
 - `device` - The android/iOS device id to pair with the license
-
-[ ] **Header**
-- 'key'   Authorization
-- 'value' Bearer + blank space + token
 
 [ ] **Responses**
 
