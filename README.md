@@ -84,7 +84,7 @@ Open Peecko API Collection
 "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb3NlLnBsZWl0ZXpAZ21haWwuY29tIiwiaWF0IjoxNjgxODIyODEyLCJleHAiOjE2ODE5MDkyMTJ9.prusaGXL276v7ZEsrA5oP5mqOenusQ4vnZW-0qDNMJ_L3ZJ2Vhc5nV43NE_X13rkFfhEIP1ShVkgOjWKbY2Flg",
 "name": "Jose Pleitez",
 "username": "jose.pleitez@gmail.com",
-"roles": [ "USER"]
+"roles": ["USER"]
 }
 ```
 - Wrong Credentials Response
