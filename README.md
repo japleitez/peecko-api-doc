@@ -17,7 +17,7 @@ This token has to be sent in all subsequent calls to the API as part of the HTTP
 
 Open Peecko API Collection
 1. execute Sign-Up
-2. execute Sign-In, copy the token from the response
+2. execute Sign-In and copy the token from the response
 3. In the left bar, select Peecko API collection
 4. In the central panel, select Authorization tab
    - Select Bearer Token from the Type list
