@@ -11,7 +11,7 @@ The API will return the response status code, response headers, and a response b
 The Sign-In service authenticates the user and returns a token if the user provides valid credentials (username and password). 
 This token has to be sent in all subsequent calls to the API as part of the HTTP headers:  
 
-[ ] **Header {Authorization, Bearer + space + token}**
+**{Authorization, Bearer + space + token}**
 
 ## Authenticating in Postman
 
@@ -20,8 +20,8 @@ Open Peecko API Collection
 2. execute Sign-In, copy the token from the response
 3. In the left bar, select Peecko API collection
 4. In the central panel, select Authorization tab
-   - Select *Bearer Token* from the *Type* dropdown list
-   - Paste the copied token into the *Token* field
+   - Select Bearer Token from the Type list
+   - Paste the copied value into the Token field
 
 **From now on the calls to the API will inherit the authentication defined for the collection**
 
