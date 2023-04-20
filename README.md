@@ -8,7 +8,7 @@ You might also specify request headers, query or body parameters in JSON format.
 The API will return the response status code, response headers, and a response body. 
 
 ## Authenticating
-The Sign-In service authenticates the user and returns a token if the user provides valid credentials (username and password).  
+The Sign-In service authenticates the user and returns a token if the user provides valid credentials (username and password). 
 This token has to be sent in all subsequent calls to the API as part of the HTTP headers:  
 
 [ ] **Header {Authorization, Bearer + space + token}**
