@@ -43,10 +43,6 @@ Open Peecko API Collection
 "password": "12345678"
 }
 ```
-Json Syntax
-- `name` - The full name of the user
-- `username` - The email address of the user
-- `password` - The password of the user
 
 [ ] **Responses**
 
@@ -110,9 +106,6 @@ HTTP Status code 401
   "device": "334340280EA00B10"
 }
 ```
-Json Syntax
-- `license` - The license to activate
-- `device` - The device id to pair with the license
 
 [ ] **Responses**
 
