@@ -151,8 +151,8 @@ HTTP Status code 401
             "title": "Yoga Leg Stretching",
             "duration": "12",
             "coach": "Julia Hernandez",
-            "image": "IMAGE",
-            "url": "URL",
+            "image": "https://i.ytimg.com/vi/hH_KVVgV_Vo/hqdefault.jpg",
+            "url": "https://www.youtube.com/embed/hH_KVVgV_Vo",
             "audience": "Women",
             "intensity": "Beginner, Intermediate",
             "tags": [
