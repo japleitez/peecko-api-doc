@@ -22,6 +22,7 @@ Open Peecko API Collection
 4. In the central panel, select Authorization tab
    - Select Bearer Token from the Type list
    - Paste the copied value into the Token field
+   - Save the changes (click Save button at the top-right corner of the Peecko Collection Panel)
 
 **From now on the calls to the API will inherit the authentication defined for the collection**
 
