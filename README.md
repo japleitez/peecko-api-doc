@@ -34,7 +34,7 @@ Open Peecko API Collection
 -----
 
 ```
-/api/auth/signup
+[POST] /api/auth/signup
 ```
 [ ] **Body**
 ```json
@@ -67,7 +67,7 @@ Open Peecko API Collection
 -----
 
 ```
-/api/auth/signin
+[POST] /api/auth/signin
 ```
 [ ] **Body**
 ```json
@@ -98,7 +98,7 @@ HTTP Status code 401
 -----
 
 ```
-/api/membership/activate
+[PUT] /api/membership/activate
 ```
 [ ] **Body**
 ```json
@@ -122,5 +122,46 @@ HTTP Status code 401
 {
     "type": "ERROR",
     "message": "License is not valid"
+}
+```
+
+### Get Today Videos
+
+-----
+```
+[GET] /api/today/videos
+```
+
+[ ] **Response**
+
+```json
+{
+    "greeting": "Here is your weekly dose of Wellness support. Check back next week for more updates",
+    "tags": [
+        "all",
+        "energy",
+        "endurance",
+        "relax",
+        "learn"
+    ],
+    "videos": [
+        {
+            "code": "V0010",
+            "category": "YOGA",
+            "title": "Yoga Leg Stretching",
+            "duration": "12",
+            "coach": "Julia Hernandez",
+            "image": "IMAGE",
+            "url": "URL",
+            "audience": "Women",
+            "intensity": "Beginner, Intermediate",
+            "tags": [
+                "energy",
+                "endurance"
+            ],
+            "description": "This is a quick routine that is focused mainly on hips and hamstrings",
+            "resume": "She is a LA-based yoga trainer who specialises in yoga therapeutics for scoliosis, streess and anxiety"
+        },
+    ]
 }
 ```
