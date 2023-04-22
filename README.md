@@ -175,7 +175,7 @@ HTTP Status code 401
 
 [ ] **Response**
 
-The response uses the same json format of the **Get Today Videos**'s response
+The response uses the same playload of the **Get Today Videos** service
 
 
 ### Get Library Videos
@@ -184,7 +184,7 @@ The response uses the same json format of the **Get Today Videos**'s response
 ```
 [GET] /api/videos/categories
 ```
-The purpose of this service is to described the available list of categories along with a short list of videos for each category
+This service provides the list of available categories along with a short list of videos for each category.
 
 [ ] **Response**
 
