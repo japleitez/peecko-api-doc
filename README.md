@@ -228,3 +228,24 @@ This service provides the list of available categories along with a short list o
 ```
 The purpose of this service is to list all the videos of a specific category,   
 The list of videos is sorted by published date in descendant order
+
+[ ] **Response**
+
+- Category found
+
+```json
+{
+   "code": "C1",
+   "title": "Health Risks",
+   "videos": [ <video-1>, <video-2>, <video-3>, <video-4>, <video-5>, <video-6>, ... <video-N> ]
+}
+```
+
+- Category not found (the code provided in the path parameter is not available)
+```json
+{
+   "code": "NO_CONTENT",
+   "title": "NO_CONTENT",
+   "videos": [ ]
+}
+```
