@@ -184,6 +184,7 @@ The response uses the same json format of the **Get Today Videos**'s response
 ```
 [GET] /api/videos/categories
 ```
+The purpose of this service is to described the available list of categories along with a short list of videos for each category
 
 [ ] **Response**
 
@@ -194,17 +195,17 @@ The response uses the same json format of the **Get Today Videos**'s response
         {
             "code": "C1",
             "title": "Health Risks",
-            "videos": [ ]
+            "videos": [ <video-11>, <video-12>, <video-13>, <video-14> ]
         },
         {
             "code": "C2",
             "title": "Yoga",
-            "videos": [ ]
+            "videos": [ <video-21>, <video-22>, <video-23>, <video-24> ]
         },
         {
             "code": "C3",
             "title": "Pilates",
-            "videos": [ <video-31>, <video-32>, <video-33> ]
+            "videos": [ <video-31>, <video-32>, <video-33>, <video-34> ]
         },
         {
             "code": "C4",
@@ -216,5 +217,14 @@ The response uses the same json format of the **Get Today Videos**'s response
 ```
 
 **Notes** 
-- Every category contains at least 1 video and maximum 3 videos
+- Every category contains at least 1 video and maximum 4 videos
 - Videos use the same json format in all services, see example in the **Get Today Videos**'s response
+
+### Get Library Videos
+
+-----
+```
+[GET] /api/videos/categories/:id
+```
+The purpose of this service is to list all the videos of a specific category,   
+The list of videos is sorted by published date in descendant order
