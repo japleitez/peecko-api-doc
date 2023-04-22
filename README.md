@@ -129,7 +129,7 @@ HTTP Status code 401
 
 -----
 ```
-[GET] /api/today/videos
+[GET] /api/videos/today
 ```
 
 [ ] **Response**
@@ -165,3 +165,54 @@ HTTP Status code 401
     ]
 }
 ```
+
+### Get Favorite Videos
+
+-----
+```
+[GET] /api/videos/favorites
+```
+
+[ ] **Response**
+
+The response uses the same json format of the **Get Today Videos*'s response
+
+
+### Get Library Videos
+
+-----
+```
+[GET] /api/videos/categories
+```
+
+[ ] **Response**
+
+{
+    "greeting": "All our video content under one roof, organized into wellness & fitness categories",
+    "categories": [
+        {
+            "code": "C1",
+            "title": "Health Risks",
+            "videos": [ <video-c11>, <video-12>, <video-13> ]
+        },
+        {
+            "code": "C2",
+            "title": "Yoga",
+            "videos": [ <video-21> ]
+        },
+        {
+            "code": "C3",
+            "title": "Pilates",
+            "videos": [ <video-31>, <video-32>, <video-33> ]
+        },
+        {
+            "code": "C4",
+            "title": "Calisthenics",
+            "videos": [ <video-41, <video-42> ]
+        }
+    ]
+}
+
+**Notes** 
+- Every category contains at least 1 video and maximum 3 videos
+- Videos use the same json format in all services, see example in the **Get Today Videos**'s response
