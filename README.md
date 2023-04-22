@@ -175,7 +175,7 @@ HTTP Status code 401
 
 [ ] **Response**
 
-The response uses the same json format of the **Get Today Videos*'s response
+The response uses the same json format of the **Get Today Videos**'s response
 
 
 ### Get Library Videos
@@ -187,18 +187,19 @@ The response uses the same json format of the **Get Today Videos*'s response
 
 [ ] **Response**
 
+```json
 {
     "greeting": "All our video content under one roof, organized into wellness & fitness categories",
     "categories": [
         {
             "code": "C1",
             "title": "Health Risks",
-            "videos": [ <video-c11>, <video-12>, <video-13> ]
+            "videos": [ ]
         },
         {
             "code": "C2",
             "title": "Yoga",
-            "videos": [ <video-21> ]
+            "videos": [ ]
         },
         {
             "code": "C3",
@@ -212,6 +213,7 @@ The response uses the same json format of the **Get Today Videos*'s response
         }
     ]
 }
+```
 
 **Notes** 
 - Every category contains at least 1 video and maximum 3 videos
