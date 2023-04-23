@@ -168,10 +168,7 @@ HTTP Status code 401 [UNAUTHORIZED]
             "description": "This is a quick routine that is focused mainly on hips and hamstrings",
             "resume": "She is a LA-based yoga trainer who specialises in yoga therapeutics for scoliosis, streess and anxiety"
         }, 
-        <video-2, 
-        <video-3>,
-        ...
-        <video-n>
+
     ]
 }
 ```
