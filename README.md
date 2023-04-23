@@ -167,7 +167,11 @@ HTTP Status code 401 [UNAUTHORIZED]
             ],
             "description": "This is a quick routine that is focused mainly on hips and hamstrings",
             "resume": "She is a LA-based yoga trainer who specialises in yoga therapeutics for scoliosis, streess and anxiety"
-        },
+        }, 
+        <video-2, 
+        <video-3>,
+        ...
+        <video-n>
     ]
 }
 ```
@@ -181,7 +185,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 
 [ ] **Response**
 
-- R51 Today Videos Response
+- R51 Today Videos Response  
 The response is similar to the payload of the **Get Today Videos** service
 
 
@@ -281,5 +285,6 @@ Some notifications include a video
         "video": null,
         "date": "05 Dec 2023"
     }
-]```
+]
+```
 
