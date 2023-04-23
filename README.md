@@ -29,9 +29,10 @@ Open Peecko API Collection
 
 ## REST API
 
-### SignUp
 
 -----
+
+### SignUp
 
 ```
 [POST] /api/auth/signup
@@ -253,11 +254,11 @@ HTTP Status Code 404
 ```
 [GET] /api/account/notifications
 ```
-This services provides the list of the latest notification, notifications sometimes include video
+This services provides the list of the latest notifications sorted by release date in descent order,  
+Some notifications include a video
 
 [ ] **Response**
 
-[
 ```json
 [
     {
@@ -275,5 +276,4 @@ This services provides the list of the latest notification, notifications someti
         "date": "05 Dec 2023"
     }
 ]```
-]
 
