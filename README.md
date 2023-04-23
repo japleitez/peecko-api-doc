@@ -30,9 +30,8 @@ Open Peecko API Collection
 ## REST API
 
 
------
-
 ### SignUp
+-----
 
 ```
 [POST] /api/auth/signup
