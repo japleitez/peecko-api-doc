@@ -62,9 +62,13 @@ Open Peecko API Collection
   "message": "Error: Username is already registered!"
 }
 ```
+- Wrong Input Response (e.g. empty name, invalid email, invalid language)
+```
+HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
+```
+
 
 ### SignIn
-
 -----
 
 ```
@@ -93,6 +97,7 @@ Open Peecko API Collection
 ```
 HTTP Status code 401
 ```
+
 
 ### Membership Activation
 
@@ -125,6 +130,7 @@ HTTP Status code 401
     "message": "License is not valid"
 }
 ```
+
 
 ### Get Today Videos
 
@@ -167,8 +173,8 @@ HTTP Status code 401
 }
 ```
 
-### Get Favorite Videos
 
+### Get Favorite Videos
 -----
 ```
 [GET] /api/videos/favorites
