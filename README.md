@@ -41,7 +41,8 @@ Open Peecko API Collection
 {
 "name": "Jose Pleitez",
 "username": "jose.pleitez@gmail.com",
-"password": "12345678"
+"password": "12345678",
+"language": "en"
 }
 ```
 
@@ -231,7 +232,7 @@ The list of videos is sorted by published date in descendant order
 
 [ ] **Response**
 
-- Category found
+- Category Found Response
 
 ```json
 {
@@ -241,11 +242,38 @@ The list of videos is sorted by published date in descendant order
 }
 ```
 
-- Category not found (the code provided in the path parameter is not available)
-```json
-{
-   "code": "NO_CONTENT",
-   "title": "NO_CONTENT",
-   "videos": [ ]
-}
+- Category Not Found Response
 ```
+HTTP Status Code 404 
+```
+
+### Get Notifications
+
+-----
+```
+[GET] /api/account/notifications
+```
+This services provides the list of the latest notification, notifications sometimes include video
+
+[ ] **Response**
+
+[
+```json
+[
+    {
+        "title": "Weloner Marathon Luxembourg ",
+        "message": "The Weloner Marathon is an annual marathon by night in Luxembourg which was held for the first time in 2006",
+        "image": "http://path/filename.jpg",
+        "video": "http://path/filename.jpg",
+        "date": "07 Dec 2023"
+    },
+    {
+        "title": "Meet Matheo, New Health Coach, We are boarding!",
+        "message": "Matheo is a Wellness Coach Certified, Matheo is specialized in Healing from chronic health issues and Healing Nutrition",
+        "image": "http://path/filename.jpg",
+        "video": null,
+        "date": "05 Dec 2023"
+    }
+]```
+]
+
