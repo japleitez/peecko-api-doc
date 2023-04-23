@@ -30,7 +30,7 @@ Open Peecko API Collection
 ## REST API
 
 
-### 1 SignUp
+### SignUp
 -----
 
 ```
@@ -48,27 +48,27 @@ Open Peecko API Collection
 
 [ ] **Responses**
 
-- R11 Successful Signup Response
+- Successful Signup Response
 ```json
 {
 "type": "OK",
 "message": "User registered successfully!"
 }
 ```
-- R12 Duplicate User Response
+- Duplicate User Response
 ```json
 {
   "type": "ERROR",
   "message": "Error: Username is already registered!"
 }
 ```
-- R13 Wrong Input Response (e.g. empty name)
+- Wrong Input Response (e.g. empty name)
 ```
 HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
 ```
 
 
-### 2 SignIn
+### SignIn
 -----
 
 ```
@@ -84,7 +84,7 @@ HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
 
 [ ] **Responses**
 
-- R21 Successful SignIn Response
+- Successful SignIn Response
 ```json
 {
 "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb3NlLnBsZWl0ZXpAZ21haWwuY29tIiwiaWF0IjoxNjgxODIyODEyLCJleHAiOjE2ODE5MDkyMTJ9.prusaGXL276v7ZEsrA5oP5mqOenusQ4vnZW-0qDNMJ_L3ZJ2Vhc5nV43NE_X13rkFfhEIP1ShVkgOjWKbY2Flg",
@@ -93,13 +93,13 @@ HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
 "roles": ["USER"]
 }
 ```
-- R22 Wrong Credentials Response
+- Wrong Credentials Response
 ```
 HTTP Status code 401 [UNAUTHORIZED]
 ```
 
 
-### 3 Membership Activation
+### Membership Activation
 -----
 
 ```
@@ -115,14 +115,14 @@ HTTP Status code 401 [UNAUTHORIZED]
 
 [ ] **Responses**
 
-- R31 Successful Membership Activation Response
+- Successful Membership Activation Response
 ```json
 {
   "type": "OK",
   "message": "License activated successfully!"
 }
 ```
-- R32 Wrong Membership Response
+- Wrong Membership Response
 ```json
 {
     "type": "ERROR",
@@ -131,7 +131,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 ```
 
 
-### 4 Get Today Videos
+### Get Today Videos
 -----
 ```
 [GET] /api/videos/today
@@ -139,7 +139,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 
 [ ] **Response**
 
-- R41 Today Videos Response
+- Today Videos Response
 ```json
 {
     "greeting": "Here is your weekly dose of Wellness support. Check back next week for more updates",
@@ -174,7 +174,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 ```
 
 
-### 5 Get Favorite Videos
+### Get Favorite Videos
 -----
 ```
 [GET] /api/videos/favorites
@@ -182,11 +182,11 @@ HTTP Status code 401 [UNAUTHORIZED]
 
 [ ] **Response**
 
-- R51 Today Videos Response  
+- Today Videos Response  
 The response is similar to the payload of the **Get Today Videos** service
 
 
-### 6 Get Library Videos
+### Get Library Videos
 -----
 ```
 [GET] /api/videos/categories
@@ -195,7 +195,7 @@ This service provides the list of available categories along with a short list o
 
 [ ] **Response**
 
-- R61 Library Videos Response
+- Library Videos Response
 ```json
 {
     "greeting": "All our video content under one roof, organized into wellness & fitness categories",
@@ -229,7 +229,7 @@ This service provides the list of available categories along with a short list o
 - Videos use the same json format in all services, see example in the **Get Today Videos**'s response
 
 
-### 7 Get Library Videos
+### Get Library Videos
 -----
 ```
 [GET] /api/videos/categories/:id
@@ -239,7 +239,7 @@ The list of videos is sorted by published date in descendant order
 
 [ ] **Response**
 
-- R71 Category Found Response
+- Category Found Response
 
 ```json
 {
@@ -249,13 +249,13 @@ The list of videos is sorted by published date in descendant order
 }
 ```
 
-- R72 Category Not Found Response
+- Category Not Found Response
 ```
 HTTP Status Code 404 [NOT_FOUND]
 ```
 
 
-### 8 Get Notifications
+### Get Notifications
 -----
 ```
 [GET] /api/account/notifications
@@ -265,7 +265,7 @@ Some notifications include a video
 
 [ ] **Response**
 
-- R81 Notifications Response
+- Notifications Response
 ```json
 [
     {
