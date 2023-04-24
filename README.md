@@ -1,6 +1,13 @@
 # PEECKO-API
 Backend application to serve Peecko Android and iOS apps
 
+## Software requirements
+- Java JDK 17 (for run the backend)
+
+## Run the API from the command line
+- set JAVA_HOME environment variable to the Java JDK 17 installation path then run the command:
+$ java -jar peecko-api.jar
+
 ## Authenticating
 The Sign-In service authenticates the user and returns a token if the user provides valid credentials (username and password). 
 This token has to be sent in all subsequent calls to the API as part of the HTTP headers:  
