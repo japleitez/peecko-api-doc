@@ -9,6 +9,9 @@ Backend application to serve Peecko Android and iOS apps
 - set JAVA_HOME environment variable to the Java JDK 17 installation path then run the command:  
 $ java -jar peecko-api.jar
 
+**Note**
+Bear in mind the peeck-api.jar does not use a database and the information provide is fake data for development purposes only.
+
 ## Authenticating
 The Sign-In service authenticates the user and returns a token if the user provides valid credentials (username and password).   
 This token has to be sent in all subsequent calls to the API as part of the HTTP headers:  
@@ -17,8 +20,9 @@ This token has to be sent in all subsequent calls to the API as part of the HTTP
 ```
 ## Authenticating in Postman
 
-Open Peecko API Collection
-1. execute Sign-Up
+From the top menu, select Peecko Team Workspace
+From the left bar, select Peecko API Collection
+1. execute Sign-Up to create the default user
 2. execute Sign-In and copy the token from the response
 3. In the left bar, select Peecko API collection
 4. In the central panel, select Authorization tab
