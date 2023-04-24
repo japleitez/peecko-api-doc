@@ -21,8 +21,8 @@ This token has to be sent in all subsequent calls to the API as part of the HTTP
 ## Authenticating in Postman
 Access the API Collection
 - From the top menu, select Peecko Team Workspace  
-- From the left bar, select Peecko API Collection
-Execute these steps:
+- From the left bar, select Peecko API Collection  
+Execute these steps:  
 1. execute Sign-Up to create the default user
 2. execute Sign-In and copy the token from the response
 3. In the left bar, select Peecko API collection
