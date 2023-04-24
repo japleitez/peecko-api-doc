@@ -20,16 +20,17 @@ This token has to be sent in all subsequent calls to the API as part of the HTTP
 ```
 ## Authenticating in Postman
 Open the Peecko API Collection:    
-1. execute the **Sign-Up** service to create the default user
-2. execute the **Sign-In** service and copy the token from the response
-3. In the left bar, select **Peecko API collection**
-4. In the central panel, select **Authorization** tab
+1. Close all API Services to avoid cache problem with the new token to be obtained
+2. Execute the **Sign-Up** Service to create the default user
+3. Execute the **Sign-In** Service and copy the new token from the response
+4. In the left bar, select **Peecko API collection**
+5. In the central panel, select **Authorization** tab
    - Select **Bearer Token** from the **Type** list
    - Paste the copied value into the **Token** field
    - Click the **Save** button at the top-right corner of the main panel
 
-**From now on the calls to the API will inherit the authentication defined for the collection**
-
+**All the API services (except for the Sign-Up and Sign-In) have been setup to Inherit auth from parent**    
+**From now on the calls to the API will inherit the authentication defined for the collection**  
 
 ## REST API
 
