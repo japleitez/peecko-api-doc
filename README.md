@@ -2,7 +2,8 @@
 Backend application to serve Peecko Android and iOS apps
 
 ## Software requirements
-- Java JDK 17 (for run the backend)
+- Java JDK 17
+- Postman
 
 ## Run the API from the command line
 - set JAVA_HOME environment variable to the Java JDK 17 installation path then run the command:  
