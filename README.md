@@ -13,7 +13,7 @@ $ java -jar peecko-api.jar
 The Sign-In service authenticates the user and returns a token if the user provides valid credentials (username and password).   
 This token has to be sent in all subsequent calls to the API as part of the HTTP headers:  
 ```
-**[ Authorization, Bearer + space + token ]**
+[ Authorization, Bearer + space + token ]
 ```
 ## Authenticating in Postman
 
