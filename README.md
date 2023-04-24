@@ -10,9 +10,9 @@ Backend application to serve Peecko Android and iOS apps
 $ java -jar peecko-api.jar
 
 **Note**  
-The peecko-api.jar is a dummy API and it does not use a database.  
-If you create an user it will exist only during execution time,  
-the rest of the data is fake and it is provided in English only.
+The peecko-api.jar is a dummy API with the sole purpose of providing the interface for frontend development.  
+The dummy API does not use a database, if you create an user it will exist only during execution time,  
+The dummy API provides fake data in English and changing the User's language to another language will not have an effect.
 
 ## Authenticating
 The Sign-In service authenticates the user and returns a token if the user provides valid credentials (username and password).   
