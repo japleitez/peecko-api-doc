@@ -5,7 +5,7 @@ Backend application to serve Peecko Android and iOS apps
 - Java JDK 17 (for run the backend)
 
 ## Run the API from the command line
-- set JAVA_HOME environment variable to the Java JDK 17 installation path then run the command:
+- set JAVA_HOME environment variable to the Java JDK 17 installation path then run the command:  
 $ java -jar peecko-api.jar
 
 ## Authenticating
