@@ -24,10 +24,10 @@ Open the Peecko API Collection:
 2. Execute the **Sign-Up** request to create the default user
 3. Execute the **Sign-In** request and copy the new token from the response
 4. In the left bar, select **Peecko API collection**
-5. In the central panel, select **Authorization** tab
+5. In the collection panel, select **Authorization** tab
    - Select **Bearer Token** from the **Type** list
    - Paste the copied value into the **Token** field
-   - Click the **Save** button at the top-right corner of the main panel
+   - Click the **Save** button at the top-right corner of the collection panel
 
 **All the API requests in Postman have been setup to Inherit auth from parent (except for the Sign-Up and Sign-In)**    
 **From now on the calls to the API will inherit the authentication defined for the collection**  
