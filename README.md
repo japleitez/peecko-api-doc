@@ -10,7 +10,8 @@ Backend application to serve Peecko Android and iOS apps
 $ java -jar peecko-api.jar
 
 **Note**  
-The peecko-api.jar does not use a database, if you create an user it will exist only during execution time, 
+The peecko-api.jar is a dummy API and it does not use a database.  
+If you create an user it will exist only during execution time,  
 the rest of the data is fake and it is provided in English only.
 
 ## Authenticating
@@ -30,7 +31,8 @@ Open the Peecko API Collection:
    - Paste the copied value into the **Token** field
    - Click the **Save** button at the top-right corner of the collection panel
 
-**All the API requests in Postman have been setup to Inherit auth from parent (except for the Sign-Up and Sign-In)**  
+**Note**  
+All the API requests in Postman have been setup to Inherit auth from parent (except for the Sign-Up and Sign-In)
 
 ## REST API
 
