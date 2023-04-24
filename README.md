@@ -9,8 +9,9 @@ Backend application to serve Peecko Android and iOS apps
 - set JAVA_HOME environment variable to the Java JDK 17 installation path then run the command:  
 $ java -jar peecko-api.jar
 
-**Note**
-Bear in mind the peeck-api.jar does not use a database and the information provide is fake data for development purposes only.
+**Note**  
+The peecko-api.jar does not use a database, if you create an user it will exist only during execution time, 
+the rest of the data is fake and it is provided in English only.
 
 ## Authenticating
 The Sign-In service authenticates the user and returns a token if the user provides valid credentials (username and password).   
