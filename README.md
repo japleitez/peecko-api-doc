@@ -15,7 +15,7 @@ The dummy API does not use a database, if you create an user it will exist only 
 The dummy API provides fake data in English and changing the User's language to another language will not have an effect.
 
 ## Authenticating
-The Sign-In service authenticates the user and returns a token if you provide valid credentials (username and password).   
+The Sign-In service authenticates the user and returns a token. You must provide valid credentials (username and password).   
 This token has to be sent in all subsequent calls to the API as part of the HTTP headers:  
 ```
 [ Authorization, Bearer + space + token ]
