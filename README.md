@@ -29,8 +29,7 @@ Open the Peecko API Collection:
    - Paste the copied value into the **Token** field
    - Click the **Save** button at the top-right corner of the collection panel
 
-**All the API requests in Postman have been setup to Inherit auth from parent (except for the Sign-Up and Sign-In)**    
-**From now on the calls to the API will inherit the authentication defined for the collection**  
+**All the API requests in Postman have been setup to Inherit auth from parent (except for the Sign-Up and Sign-In)**  
 
 ## REST API
 
