@@ -104,6 +104,27 @@ HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
 HTTP Status code 401 [UNAUTHORIZED]
 ```
 
+### Get Installations
+-----
+
+```
+[PUT] /api/auth/installations
+```
+
+[ ] **Responses**
+
+- Successful Membership Activation Response
+```json
+[
+    {
+        "device-id": "aaa",
+        "phone-model": "bbb",
+        "os-version": "ccc",
+        "installed-on": "2023-05-09 19:18:42"
+    },
+]
+```
+
 
 ### Membership Activation
 -----
