@@ -45,10 +45,10 @@ Open the Peecko API Collection:
 [ ] **Body**
 ```json
 {
-"name": "Jose Pleitez",
-"username": "jose.pleitez@gmail.com",
-"password": "12345678",
-"language": "en"
+    "name": "Jose Pleitez",
+    "username": "jose.pleitez@gmail.com",
+    "password": "12345678",
+    "language": "en"
 }
 ```
 
@@ -57,14 +57,14 @@ Open the Peecko API Collection:
 - Successful Signup Response
 ```json
 {
-"type": "OK",
+"code": "OK",
 "message": "User registered successfully!"
 }
 ```
 - Duplicate User Response
 ```json
 {
-  "type": "ERROR",
+  "code": "ERROR",
   "message": "Error: Username is already registered!"
 }
 ```
@@ -83,11 +83,11 @@ HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
 [ ] **Body**
 ```json
 {
-"username": "jose.pleitez@gmail.com",
-"password": "12345678",
-"device-id": "aaa",
-"phone-model": "bbb",
-"os-version": "ccc"
+    "username": "jose.pleitez@gmail.com",
+    "password": "12345678",
+    "device-id": "aaa",
+    "phone-model": "bbb",
+    "os-version": "ccc"
 }
 ```
 
@@ -114,9 +114,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 [PUT] /api/auth/installations
 ```
 
-[ ] **Responses**
-
-- Successful Membership Activation Response
+[ ] **Response**
 ```json
 [
     {
@@ -125,7 +123,47 @@ HTTP Status code 401 [UNAUTHORIZED]
         "os-version": "ccc",
         "installed-on": "2023-05-09 19:18:42"
     },
+    {
+        "device-id": "mmm",
+        "phone-model": "xxx",
+        "os-version": "ccc",
+        "installed-on": "2023-05-10 11:43:15"
+    },
 ]
+```
+
+
+### Check Active Email
+-----
+
+```
+[PUT] /api/auth/active/{username}
+```
+
+[ ] **Response**
+
+- Verified Email
+```json
+{
+    "code": "OK",
+    "message": "Email verified successfully!"
+}
+```
+
+- Not Verified Email
+```json
+{
+    "code": "ERROR",
+    "message": "Email not verified yet, please try again"
+}
+```
+
+- Email not registered (does not exist in the database)
+```json
+{
+    "code": "ERROR",
+    "message": "Email is not registered"
+}
 ```
 
 
@@ -148,16 +186,40 @@ HTTP Status code 401 [UNAUTHORIZED]
 - Successful Membership Activation Response
 ```json
 {
-  "type": "OK",
+  "code": "OK",
   "message": "License activated successfully!"
 }
 ```
 - Wrong Membership Response
 ```json
 {
-    "type": "ERROR",
+    "code": "ERROR",
     "message": "License is not valid, please ask your Employer to provide you a valid one"
 }
+```
+
+### Add Favorite Video
+-----
+```
+[PUT] /api/videos/favorites/{video-code}
+```
+
+[ ] **Response**
+
+```
+HTTP Status Code 200 (OK)
+```
+
+### Remove Favorite Video
+-----
+```
+[DELETE] /api/videos/favorites/{video-code}
+```
+
+[ ] **Response**
+
+```
+HTTP Status Code 200 (OK)
 ```
 
 
