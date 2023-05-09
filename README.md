@@ -84,7 +84,10 @@ HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
 ```json
 {
 "username": "jose.pleitez@gmail.com",
-"password": "12345678"
+"password": "12345678",
+"device-id": "aaa",
+"phone-model": "bbb",
+"os-version": "ccc"
 }
 ```
 
