@@ -258,7 +258,9 @@ HTTP Status Code 200 (OK)
                 "endurance"
             ],
             "description": "This is a quick routine that is focused mainly on hips and hamstrings",
-            "resume": "She is a LA-based yoga trainer who specialises in yoga therapeutics for scoliosis, streess and anxiety"
+            "resume": "She is a LA-based yoga trainer who specialises in yoga therapeutics for scoliosis, streess and anxiety",
+            "player": "youtube",
+            "favorite": true
         }, 
 
     ]
