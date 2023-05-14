@@ -140,20 +140,23 @@ HTTP Status code 401 [UNAUTHORIZED]
 
 [ ] **Response**
 ```json
-[
-    {
-        "device-id": "aaa",
-        "phone-model": "bbb",
-        "os-version": "ccc",
-        "installed-on": "2023-05-09 19:18:42"
-    },
-    {
-        "device-id": "mmm",
-        "phone-model": "xxx",
-        "os-version": "ccc",
-        "installed-on": "2023-05-10 11:43:15"
-    },
-]
+{
+    "installations": [
+        {
+            "device-id": "aaa",
+            "phone-model": "bbb",
+            "os-version": "ccc",
+            "installed-on": "2023-05-14 16:26:09"
+        },
+        {
+            "device-id": "XXX",
+            "phone-model": "ooo",
+            "os-version": "ddd",
+            "installed-on": "2023-05-23 11:12:43"
+        }
+    ],
+    "max-allowed": 3
+}
 ```
 
 
