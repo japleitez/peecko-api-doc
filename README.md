@@ -271,14 +271,14 @@ HTTP Status Code 400 (it means, the username is invalid)
 ```json
 {
     "code": "OK",
-    "message": "Pin code verified successfully!"
+    "message": "Verification code is valid!"
 }
 ```
 - Wrong Pin Code Response
 ```json
 {
     "code": "ERROR",
-    "message": "Pin code is invalid or expired, please request a new pin code!"
+    "message": "Verification code is invalid"
 }
 ```
 
