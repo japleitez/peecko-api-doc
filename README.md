@@ -107,6 +107,30 @@ HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
 HTTP Status code 401 [UNAUTHORIZED]
 ```
 
+
+### SignOut
+-----
+
+```
+[POST] /api/auth/signout
+```
+[ ] **Body**
+```json
+{
+    "username": "jose.pleitez@gmail.com",
+    "device-id": "aaa"
+}
+```
+
+[ ] **Response**
+```json
+{
+    "code": "OK",
+    "message": "User signed out successfully!"
+}
+```
+
+
 ### Get Installations
 -----
 
