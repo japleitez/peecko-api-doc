@@ -198,6 +198,63 @@ HTTP Status code 401 [UNAUTHORIZED]
 }
 ```
 
+
+### Get Pin Code
+-----
+
+```
+[POST] /api/auth/pincode
+```
+[ ] **Body**
+```json
+{
+  "username": "jose.pleitez@gmail.com",
+}
+```
+
+[ ] **Responses**
+
+- Successul Response
+```json
+{
+  "request-id": "53d05e76-159d-43c7-9cf2-f24f6078578b",
+}
+```
+- Error Response
+```
+HTTP Status Code 400 (it means, the username is invalid)
+```
+
+### Verify Pin Code
+-----
+
+```
+[POST] /api/auth/pincode/{requestId}
+```
+[ ] **Body**
+```json
+{
+  "pin-code": "1234",
+}
+```
+
+[ ] **Responses**
+
+- Successul Pin Code Verification Response
+```json
+{
+    "code": "OK",
+    "message": "Pin code verified successfully!"
+}
+```
+- Wrong Pin Code Response
+```json
+{
+    "code": "ERROR",
+    "message": "Pin code is invalid or expired, please request a new pin code!"
+}
+```
+
 ### Add Favorite Video
 -----
 ```
