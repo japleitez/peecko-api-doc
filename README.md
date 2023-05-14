@@ -252,6 +252,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 HTTP Status Code 400 (it means, the username is invalid)
 ```
 
+
 ### Verify Pin Code
 -----
 
@@ -281,6 +282,40 @@ HTTP Status Code 400 (it means, the username is invalid)
     "message": "Verification code is invalid"
 }
 ```
+
+
+### Change Password
+-----
+
+```
+[POST] /api/account/change-password
+```
+[ ] **Body**
+```json
+{
+    "request-id": "72de740d-c8ff-4611-aebd-718c866edd86",
+    "pin-code": "1234",
+    "password": "whatever"
+}
+```
+
+[ ] **Responses**
+
+- Successul Change Password Response
+```json
+{
+    "code": "OK",
+    "message": "Password changed successfully!"
+}
+```
+- Error Change Password Response
+```json
+{
+    "code": "ERROR",
+    "message": "Cannot change password, token expired or invalid"
+}
+```
+
 
 ### Add Favorite Video
 -----
