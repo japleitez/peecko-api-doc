@@ -226,9 +226,12 @@ HTTP Status code 401 [UNAUTHORIZED]
 ```
 
 
-### Get Pin Code
+### Get Verification Code (first step to change password)
 -----
-
+This service does two things:
+- returns a  request id  
+- sends a verification code to the email specified in the request's body (<b>for now, the verification code is fixed 1234</b>)
+These two pieces of information will be required to change the user's password in the last step
 ```
 [POST] /api/auth/pincode
 ```
@@ -249,11 +252,11 @@ HTTP Status code 401 [UNAUTHORIZED]
 ```
 - Error Response
 ```
-HTTP Status Code 400 (it means, the username is invalid)
+HTTP Status Code 400 (the username is invalid)
 ```
 
 
-### Verify Pin Code
+### Verify Pin Code (second step to change password)
 -----
 
 ```
