@@ -256,7 +256,7 @@ HTTP Status Code 400 (the username is invalid)
 ```
 
 
-### Verify Pin Code (second step to change password)
+### Verify Activation Code (second step to change password)
 -----
 
 ```
