@@ -160,7 +160,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 ```
 
 
-### Check Active Email
+### Verify Active Email
 -----
 
 ```
@@ -194,7 +194,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 ```
 
 
-### Membership Activation
+### Activate Membership
 -----
 
 ```
@@ -445,7 +445,7 @@ This service provides the list of available categories along with a short list o
 - Videos use the same json format in all services, see example in the **Get Today Videos**'s response
 
 
-### Get Library Videos
+### Get Category Videos
 -----
 ```
 [GET] /api/videos/categories/:id
