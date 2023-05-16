@@ -96,10 +96,21 @@ HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
 - Successful SignIn Response
 ```json
 {
-"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb3NlLnBsZWl0ZXpAZ21haWwuY29tIiwiaWF0IjoxNjgxODIyODEyLCJleHAiOjE2ODE5MDkyMTJ9.prusaGXL276v7ZEsrA5oP5mqOenusQ4vnZW-0qDNMJ_L3ZJ2Vhc5nV43NE_X13rkFfhEIP1ShVkgOjWKbY2Flg",
-"name": "Jose Pleitez",
-"username": "jose.pleitez@gmail.com",
-"roles": ["USER"]
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb3NlLnBsZWl0ZXpAZ21haWwuY29tIiwiaWF0IjoxNjg0MjYwOTM0LCJleHAiOjE2ODQzNDczMzR9",
+    "name": "Jose Pleitez",
+    "username": "jose.pleitez@gmail.com",
+    "roles": [
+        "USER"
+    ],
+    "installations": [
+        {
+            "device-id": "aaa",
+            "phone-model": "bbb",
+            "os-version": "ccc",
+            "installed-on": "2023-05-16 18:15:34"
+        }
+    ],
+    "max-allowed": 3
 }
 ```
 - Wrong Credentials Response
