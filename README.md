@@ -260,7 +260,7 @@ HTTP Status Code 400 (the username is invalid)
 -----
 
 ```
-[POST] /api/auth/pincode/{requestId}
+[PUT] /api/auth/pincode/{requestId}
 ```
 [ ] **Body**
 ```json
