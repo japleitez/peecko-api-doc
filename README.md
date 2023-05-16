@@ -164,7 +164,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 -----
 
 ```
-[PUT] /api/auth/active/{username}
+[GET] /api/auth/active/{username}
 ```
 
 [ ] **Response**
