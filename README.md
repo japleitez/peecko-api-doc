@@ -135,7 +135,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 -----
 
 ```
-[PUT] /api/auth/installations
+[GET] /api/auth/installations
 ```
 
 [ ] **Response**
