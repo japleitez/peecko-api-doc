@@ -126,7 +126,7 @@ Open the Peecko API Collection:
     "code": "ERROR",
     "message": "Password is invalid, it must be 6 characters minimum of letters, digits and symbols &@?!#$%&"
 }
-
+```
 
 
 ### SignUp
