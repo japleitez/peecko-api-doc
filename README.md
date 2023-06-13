@@ -429,7 +429,7 @@ HTTP Status Code 400 (the username is invalid)
 -----
 
 ```
-[POST] /api/account/change-password
+[POST] /api/auth/change-password
 ```
 [ ] **Body**
 ```json
