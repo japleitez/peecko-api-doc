@@ -257,7 +257,9 @@ HTTP Status code 401 [UNAUTHORIZED]
 {
     "active-membership": true,
     "email-verified": true,
-    "exceeded-installations": false
+    "installations-exceeded": false,
+    "installations": 1,
+    "maxAllowed": 1
 }
 ```
 - Error Response
