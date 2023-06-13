@@ -64,6 +64,7 @@ Open the Peecko API Collection:
     "code": "ERROR",
     "message": "Email is invalid!"
 }
+```
 
 
 ### Validate Name
@@ -94,7 +95,7 @@ Open the Peecko API Collection:
     "code": "ERROR",
     "message": "Name is invalid, it must contain 2 words minimum without symbols"
 }
-
+```
 
 
 ### Validate Password
