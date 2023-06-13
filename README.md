@@ -237,6 +237,38 @@ HTTP Status code 401 [UNAUTHORIZED]
 ```
 
 
+### Get Profile
+-----
+
+```
+[PUT] /api/auth/profile
+```
+[ ] **Body**
+```json
+{
+  "username": "jose.pleitez@gmail.com"
+}
+```
+
+[ ] **Response**
+
+- Successful Response
+```json
+{
+    "active-membership": true,
+    "email-verified": true,
+    "exceeded-installations": false
+}
+```
+- Error Response
+```json
+{
+    "code": "ERROR",
+    "message": "User is not registered."
+}
+```
+
+
 ### Get Verification Code (first step to change password)
 -----
 This service does two things:
