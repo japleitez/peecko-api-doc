@@ -36,6 +36,98 @@ Open the Peecko API Collection:
 ## REST API
 
 
+### Validate Email
+-----
+
+```
+[POST] /api/auth/username/validate
+```
+[ ] **Body**
+```json
+{
+    "username": "jose.pleitez@gmail.com"
+}
+```
+
+[ ] **Responses**
+
+- Successful Response
+```json
+{
+    "code": "OK",
+    "message": "Email is valid!"
+}
+```
+- Error Response
+```json
+{
+    "code": "ERROR",
+    "message": "Email is invalid!"
+}
+
+
+### Validate Name
+-----
+
+```
+[POST] /api/auth/name/validate
+```
+[ ] **Body**
+```json
+{
+    "name": "Jose Pleitez"
+}
+```
+
+[ ] **Responses**
+
+- Successful Response
+```json
+{
+    "code": "OK",
+    "message": "Name is valid!"
+}
+```
+- Error Response
+```json
+{
+    "code": "ERROR",
+    "message": "Name is invalid, it must contain 2 words minimum without symbols"
+}
+
+
+
+### Validate Password
+-----
+
+```
+[POST] /api/auth/password/validate
+```
+[ ] **Body**
+```json
+{
+    "password": "secret"
+}
+```
+
+[ ] **Responses**
+
+- Successful Response
+```json
+{
+    "code": "OK",
+    "message": "Password is valid!"
+}
+```
+- Error Response
+```json
+{
+    "code": "ERROR",
+    "message": "Password is invalid, it must be 6 characters minimum and contains combination of letters, digits and symbols &@?!#$%&"
+}
+
+
+
 ### SignUp
 -----
 
