@@ -123,7 +123,7 @@ Open the Peecko API Collection:
 ```json
 {
     "code": "ERROR",
-    "message": "Password is invalid, it must be 6 characters minimum and contains combination of letters, digits and symbols &@?!#$%&"
+    "message": "Password is invalid, it must be 6 characters minimum of letters, digits and symbols &@?!#$%&"
 }
 
 
