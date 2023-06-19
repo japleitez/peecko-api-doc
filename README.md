@@ -300,14 +300,17 @@ HTTP Status code 401 [UNAUTHORIZED]
 
 ### Activate Membership
 -----
-
+For now, valid license must:   
+- has 20 chars
+- start with '1111'
+- not be in the list of expired license (see De-Activate Membership)
 ```
 [PUT] /api/membership/activate
 ```
 [ ] **Body**
 ```json
 {
-  "license": "LU999999999999999999",
+  "license": "11119999999999999999",
   "device": "334340280EA00B10"
 }
 ```
@@ -328,6 +331,33 @@ HTTP Status code 401 [UNAUTHORIZED]
     "message": "License is not valid, please ask your Employer to provide you a valid one"
 }
 ```
+
+### De-Activate Membership
+-----
+For now, you can deactivate a license using this backdoor service   
+Minimum validation: license parameter must 20 chars.  
+Notice, this service will be available only during the development time so you can play activating and deactivating licenses  
+```
+[PUT] /api/auth/deactivate/{license}
+
+[ ] **Responses**
+
+- Successful Membership De-Activation Response
+```json
+{
+  "code": "OK",
+  "message": "License inactivated successfully!"
+}
+```
+- Wrong Membership Response
+```json
+{
+    "code": "ERROR",
+    "message": "License must be 20 char length"
+}
+```
+
+
 
 
 ### Get Profile
