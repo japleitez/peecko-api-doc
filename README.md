@@ -303,7 +303,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 For now, valid license must:   
 - has 20 chars
 - start with '1111'
-- not be in the list of expired license (see De-Activate Membership)
+- not be in the list of deactivated licenses
 ```
 [PUT] /api/membership/activate
 ```
@@ -334,9 +334,8 @@ For now, valid license must:
 
 ### De-Activate Membership
 -----
-For now, you can deactivate a license using this backdoor service   
-Minimum validation: license parameter must 20 chars.  
-Notice, this service will be available only during the development time so you can play activating and deactivating licenses  
+You can deactivate a license using this backdoor service (no need of token and it will be available only during development time)   
+Minimum validation: license must be 20 chars 
 ```
 [PUT] /api/auth/deactivate/{license}
 
