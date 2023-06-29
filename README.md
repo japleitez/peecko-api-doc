@@ -189,21 +189,26 @@ HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
 - Successful SignIn Response
 ```json
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb3NlLnBsZWl0ZXpAZ21haWwuY29tIiwiaWF0IjoxNjg0MjYwOTM0LCJleHAiOjE2ODQzNDczMzR9",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb3NlLnBsZWl0ZXpAZ21haWwuY29tIiwiaWF0IjoxNjg4MDM1OTI0LCJleHAiOjE2ODgxMjIzMjR9.y_S8Tt-rtUFDfRISwqRsZIWkW5aEBscYN7tlv9Qfp7XTtLXJs_9Q3t3Dt3WUmzIUaH07XtgtuMnr3IG8nHUV7A",
     "name": "Jose Pleitez",
     "username": "jose.pleitez@gmail.com",
     "roles": [
         "USER"
     ],
+    "max-allowed": 3,
     "installations": [
         {
-            "device-id": "aaa",
-            "phone-model": "bbb",
-            "os-version": "ccc",
-            "installed-on": "2023-05-16 18:15:34"
+            "device-id": "1CB06F3D-1E11-4608-9349-D54DDC75CA0B",
+            "phone-model": "iPhone",
+            "os-version": "iOS 16.1.1",
+            "installed-on": "2023-06-29 10:49:49"
         }
     ],
-    "max-allowed": 3
+    "installations-count": 1,
+    "membership-status": "ERROR",
+    "membership-message": "Membership is not active",
+    "account-status": "OK",
+    "account-message": "Account is verified"
 }
 ```
 - Wrong Credentials Response
