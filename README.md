@@ -382,11 +382,11 @@ Minimum validation: license must be 20 chars
 - Successful Response
 ```json
 {
-    "active-membership": true,
+    "active-membership": false,
     "email-verified": true,
     "installations-exceeded": false,
     "installations": 1,
-    "maxAllowed": 1
+    "maxAllowed": 3
 }
 ```
 - Error Response
