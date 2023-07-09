@@ -189,26 +189,18 @@ HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
 - Successful SignIn Response
 ```json
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb3NlLnBsZWl0ZXpAZ21haWwuY29tIiwiaWF0IjoxNjg4MDM1OTI0LCJleHAiOjE2ODgxMjIzMjR9.y_S8Tt-rtUFDfRISwqRsZIWkW5aEBscYN7tlv9Qfp7XTtLXJs_9Q3t3Dt3WUmzIUaH07XtgtuMnr3IG8nHUV7A",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb3NlLnBsZWl0ZXpAZ21...",
     "name": "Jose Pleitez",
     "username": "jose.pleitez@gmail.com",
-    "roles": [
-        "USER"
-    ],
-    "max-allowed": 3,
-    "installations": [
-        {
-            "device-id": "1CB06F3D-1E11-4608-9349-D54DDC75CA0B",
-            "phone-model": "iPhone",
-            "os-version": "iOS 16.1.1",
-            "installed-on": "2023-06-29 10:49:49"
-        }
-    ],
-    "installations-count": 1,
-    "membership-status": "ERROR",
-    "membership-message": "Membership is not active",
-    "account-status": "OK",
-    "account-message": "Account is verified"
+    "email-verified": true,
+    "devices-exceeded": false,
+    "devices-count": 1,
+    "devices-max": 3,
+    "membership": "",
+    "membership-activated": false,
+    "membership-expiration": "",
+    "membership-sponsor": "",
+    "membership-sponsor-logo": ""
 }
 ```
 - Wrong Credentials Response
