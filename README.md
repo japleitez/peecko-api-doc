@@ -514,6 +514,18 @@ HTTP Status Code 200 (OK)
 HTTP Status Code 200 (OK)
 ```
 
+### Remove All Favorite Videos
+-----
+```
+[DELETE] /api/videos/favorites
+```
+
+[ ] **Response**
+
+```
+HTTP Status Code 200 (OK)
+```
+
 
 ### Get Today Videos
 -----
