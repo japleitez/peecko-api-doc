@@ -374,11 +374,17 @@ Minimum validation: license must be 20 chars
 - Successful Response
 ```json
 {
-    "active-membership": false,
+    "name": "Jose Pleitez",
+    "username": "jose.pleitez@gmail.com",
     "email-verified": true,
-    "installations-exceeded": false,
-    "installations": 1,
-    "maxAllowed": 3
+    "devices-exceeded": false,
+    "devices-count": 1,
+    "devices-max": 3,
+    "membership": "11111111111111111111",
+    "membership-activated": true,
+    "membership-expiration": "09-10-2023",
+    "membership-sponsor": "BIL Wealth Management",
+    "membership-sponsor-logo": "http://peecko-api/logo/0190.png"
 }
 ```
 - Error Response
