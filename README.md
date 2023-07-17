@@ -461,11 +461,11 @@ HTTP Status Code 400 (the username is invalid)
 ```
 
 
-### Change Password
+### Reset Password [UPDATED] [endpoint renamed]
 -----
 
 ```
-[POST] /api/auth/change-password
+[POST] /api/auth/reset-password
 ```
 [ ] **Body**
 ```json
@@ -478,6 +478,40 @@ HTTP Status Code 400 (the username is invalid)
 
 [ ] **Responses**
 
+- Successul Reset Password Response
+```json
+{
+    "code": "OK",
+    "message": "Password changed successfully!"
+}
+```
+- Error Reset Password Response
+```json
+{
+    "code": "ERROR",
+    "message": "Cannot change password, token expired or invalid"
+}
+```
+
+
+
+### Change Password [NEW]
+-----
+
+```
+[POST] /api/auth/change-password
+```
+[ ] **Body**
+```json
+{
+    "username": "jose.pleitez@gmail.com",
+    "old-password": "old-value",
+    "new-password": "new value"
+}
+```
+
+[ ] **Responses**
+
 - Successul Change Password Response
 ```json
 {
@@ -485,11 +519,79 @@ HTTP Status Code 400 (the username is invalid)
     "message": "Password changed successfully!"
 }
 ```
-- Error Change Password Response
+- Error Email validation Response
 ```json
 {
     "code": "ERROR",
-    "message": "Cannot change password, token expired or invalid"
+    "message": "Email is required"
+}
+```
+- Error Email Not Found Response
+```json
+{
+    "code": "ERROR",
+    "message": "Email is not registered"
+}
+```
+- Error Old Password Wrong Response
+```json
+{
+    "code": "ERROR",
+    "message": "Current password does not match"
+}
+```
+- Error New Password Invalid Response
+```json
+{
+    "code": "ERROR",
+    "message": "Password is invalid, it must contain only letters, digits and symbols &@?!#$%&"
+}
+```
+
+
+
+### Change Personal Info [NEW]
+-----
+This service changes only the user's name, the user's email is provided as a referenced only
+```
+[POST] /api/auth/change-personal-info
+```
+[ ] **Body**
+```json
+{
+    "username": "jose.pleitez@gmail.com",
+    "name": "Jose A. Pleitez"
+}
+```
+
+[ ] **Responses**
+
+- Successul Change Personal Info Response
+```json
+{
+    "code": "OK",
+    "message": "Personal information updated"
+}
+```
+- Error Email validation Response
+```json
+{
+    "code": "ERROR",
+    "message": "Email is required"
+}
+```
+- Error Email Not Found Response
+```json
+{
+    "code": "ERROR",
+    "message": "Email is not registered"
+}
+```
+- Error Name Invalid Response
+```json
+{
+    "code": "ERROR",
+    "message": "Name is invalid, it must contain 2 words minimum without symbols"
 }
 ```
 
