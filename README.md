@@ -387,9 +387,9 @@ Minimum validation: license must be 20 chars
     "membership-sponsor-logo": "http://peecko-api/logo/0190.png"
 }
 ```
-Where:
-- membership-expiration: it is merely informative and should be handled as plain text and DO NOT use for validations
-- membership-sponsor-logo: in case the value is empty please display the default logo used in the design
+Where:   
+membership-expiration: it is merely informative and should be handled as plain text and DO NOT use for validations   
+membership-sponsor-logo: in case the value is empty please display the default logo used in the design   
 
 - Error Response
 ```json
