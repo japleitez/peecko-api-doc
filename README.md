@@ -633,7 +633,7 @@ HTTP Status Code 200 (OK)
 ```
 
 
-### Get Today Videos
+### Get Today Videos [UPDATED][coach fields added]
 -----
 ```
 [GET] /api/videos/today
@@ -670,7 +670,10 @@ HTTP Status Code 200 (OK)
             "description": "This is a quick routine that is focused mainly on hips and hamstrings",
             "resume": "She is a LA-based yoga trainer who specialises in yoga therapeutics for scoliosis, streess and anxiety",
             "player": "youtube",
-            "favorite": true
+            "favorite": true,
+            "coach-website": "https://peecko.com/",
+            "coach-email": "julia.hernandez@gmail.com",
+            "coach-instagram": "julialux"
         }, 
 
     ]
