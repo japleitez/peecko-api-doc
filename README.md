@@ -654,10 +654,10 @@ HTTP Status Code 200 (OK)
     ],
     "videos": [
         {
-            "code": "V0010",
+            "code": "YG002",
             "category": "YOGA",
-            "title": "Yoga Leg Stretching",
-            "duration": "12",
+            "title": "Yoga Leg Stretching 2",
+            "duration": "12:30",
             "coach": "Julia Hernandez",
             "image": "https://i.ytimg.com/vi/hH_KVVgV_Vo/hqdefault.jpg",
             "url": "https://www.youtube.com/embed/hH_KVVgV_Vo",
@@ -667,15 +667,14 @@ HTTP Status Code 200 (OK)
                 "energy",
                 "endurance"
             ],
-            "description": "This is a quick routine that is focused mainly on hips and hamstrings",
-            "resume": "She is a LA-based yoga trainer who specialises in yoga therapeutics for scoliosis, streess and anxiety",
+            "description": "This is a quick routine that is focused mainly on hips and hamstrings. Perfect for recovery/sore muscles and working on your flexibility",
+            "resume": "She is a LA-based yoga trainer who specialises in yoga therapeutics for scoliosis, stress, anxiety, depression, and many other modern day imbalances and health issues",
             "player": "youtube",
-            "favorite": true,
+            "favorite": false,
             "coach-website": "https://peecko.com/",
             "coach-email": "julia.hernandez@gmail.com",
             "coach-instagram": "julialux"
-        }, 
-
+        },
     ]
 }
 ```
