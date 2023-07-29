@@ -227,7 +227,7 @@ HTTP Status code 401 [UNAUTHORIZED]
 ```json
 {
     "code": "OK",
-    "message": "User signed out successfully!"
+    "message": "Successful sign out"
 }
 ```
 
