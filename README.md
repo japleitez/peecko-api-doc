@@ -189,17 +189,17 @@ HTTP Status Code 422 (UNPROCESSABLE_ENTITY)
 - Successful SignIn Response
 ```json
 {
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb3NlLnBsZWl0ZXpAZ21...",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb3NlLnBsZWl0ZXpAZ21haWwuY29tIiwiaWF0IjoxNjkwNjQ1NTI3LCJleHAiOjE2OTA3MzE5Mjd9.P_7VJltDZpS0e5cciTGFdTJNXSigyuB3Qf-cseRj7HU885-cEfW3j2SzGqs5E1IJP0nONAdRs0WjHUqGNY_HSA",
     "name": "Jose Pleitez",
     "username": "jose.pleitez@gmail.com",
     "email-verified": true,
     "devices-exceeded": false,
     "devices-count": 1,
     "devices-max": 3,
-    "membership": "",
-    "membership-activated": false,
-    "membership-expiration": "",
-    "membership-sponsor": "",
+    "membership": "11111111111111111111",
+    "membership-activated": true,
+    "membership-expiration": "20-10-2023",
+    "membership-sponsor": "BIL Wealth Management",
     "membership-sponsor-logo": ""
 }
 ```
