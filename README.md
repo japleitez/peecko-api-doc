@@ -818,6 +818,55 @@ Some notifications include a video
 
 ```
 
+### Add Video to Playlist
+-----
+```
+[PUT] /api/videos/playlists/:listId/:videoCode
+```
+This service add the video at the end of the list
+Example: /api/videos/playlists/1/YG001
+
+[ ] **Response**
+
+- Response
+```json
+
+{
+    "username": "jose.pleitez@gmail.com",
+    "id": 1,
+    "name": "short workouts",
+    "videoItems": [
+        {
+            "previous": null,
+            "code": "YG001",
+            "next": "null",
+            "video": {
+                "code": "YG001",
+                "category": "YOGA",
+                "title": "Yoga Leg Stretching 1",
+                "duration": "12:30",
+                "coach": "Julia Hernandez",
+                "image": "https://i.ytimg.com/vi/-btuQsCiyfc/hqdefault.jpg",
+                "url": "https://www.youtube.com/embed/-btuQsCiyfc",
+                "audience": "Women",
+                "intensity": "Beginner, Intermediate",
+                "tags": [
+                    "energy",
+                    "endurance"
+                ],
+                "description": "This is a quick routine that is focused mainly on hips and hamstrings. Perfect for recovery/sore muscles and working on your flexibility",
+                "resume": "She is a LA-based yoga trainer who specialises in yoga therapeutics for scoliosis, stress, anxiety, depression, and many other modern day imbalances and health issues",
+                "player": "youtube",
+                "favorite": false,
+                "coach-website": "https://peecko.com/",
+                "coach-email": "julia.hernandez@gmail.com",
+                "coach-instagram": "julialux"
+            }
+        },
+    ]
+}
+
+```
 
 
 ### Get Playlists (ids and names)
@@ -849,7 +898,7 @@ Some notifications include a video
 ### Get Playlist Content by Identifier
 -----
 ```
-[GET] /api/videos/playlists/
+[GET] /api/videos/playlists/:id
 ```
 [ ] **Response**
 
