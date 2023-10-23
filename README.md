@@ -818,3 +818,32 @@ Some notifications include a video
 
 ```
 
+
+
+### Get Playlists
+-----
+```
+[GET] /api/videos/playlists/
+```
+[ ] **Response**
+
+- Response
+```json
+
+[
+    {
+        "id": 1,
+        "name": "short workouts"
+    },
+    {
+        "id": 2,
+        "name": "intensive pilates"
+    },
+    {
+        "id": 2,
+        "name": "short meditations"
+    },
+]
+
+```
+
