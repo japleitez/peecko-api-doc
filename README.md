@@ -935,7 +935,6 @@ The service returns the playlist updated with the new video at the end of the li
 }
 ```
 
-
 ### Move video up or down in a Playlist
 -----
 ```
