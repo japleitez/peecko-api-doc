@@ -791,3 +791,30 @@ Some notifications include a video
 ]
 ```
 
+
+### Create Playlist
+-----
+```
+[POST] /api/videos/playlists/
+```
+[ ] **Body**
+```json
+{
+  "name": "short workouts",
+}
+```
+
+[ ] **Response**
+
+- Notifications Response
+```json
+
+{
+    "username": "jose.pleitez@gmail.com",
+    "id": 1,
+    "name": "short workouts",
+    "videoItems": []
+}
+
+```
+
