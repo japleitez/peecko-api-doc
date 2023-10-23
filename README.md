@@ -806,7 +806,7 @@ Some notifications include a video
 
 [ ] **Response**
 
-- Notifications Response
+- Response
 ```json
 
 {
