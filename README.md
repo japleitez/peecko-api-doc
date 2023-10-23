@@ -828,7 +828,6 @@ Example: /api/videos/playlists/1/YG001
 
 [ ] **Response**
 
-- Response
 ```json
 
 {
