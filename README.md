@@ -596,10 +596,10 @@ This service changes only the user's name, the user's email is provided as a ref
 ```
 
 
-### Add Favorite Video
+### Add Favorite 
 -----
 ```
-[PUT] /api/videos/favorites/{video-code}
+[PUT] /api/s/favorites/{-code}
 ```
 
 [ ] **Response**
@@ -608,10 +608,10 @@ This service changes only the user's name, the user's email is provided as a ref
 HTTP Status Code 200 (OK)
 ```
 
-### Remove Favorite Video
+### Remove Favorite 
 -----
 ```
-[DELETE] /api/videos/favorites/{video-code}
+[DELETE] /api/s/favorites/{-code}
 ```
 
 [ ] **Response**
@@ -620,10 +620,10 @@ HTTP Status Code 200 (OK)
 HTTP Status Code 200 (OK)
 ```
 
-### Remove All Favorite Videos
+### Remove All Favorite s
 -----
 ```
-[DELETE] /api/videos/favorites
+[DELETE] /api/s/favorites
 ```
 
 [ ] **Response**
@@ -633,15 +633,15 @@ HTTP Status Code 200 (OK)
 ```
 
 
-### Get Today Videos [UPDATED][coach fields added]
+### Get Today s [UPDATED][coach fields added]
 -----
 ```
-[GET] /api/videos/today
+[GET] /api/s/today
 ```
 
 [ ] **Response**
 
-- Today Videos Response
+- Today s Response
 ```json
 {
     "greeting": "Here is your weekly dose of Wellness support. Check back next week for more updates",
@@ -652,7 +652,7 @@ HTTP Status Code 200 (OK)
         "relax",
         "learn"
     ],
-    "videos": [
+    "s": [
         {
             "code": "YG002",
             "category": "YOGA",
@@ -680,31 +680,31 @@ HTTP Status Code 200 (OK)
 ```
 
 
-### Get Favorite Videos
+### Get Favorite s
 -----
 ```
-[GET] /api/videos/favorites
+[GET] /api/s/favorites
 ```
 
 [ ] **Response**
 
-- Today Videos Response  
-The response is similar to the payload of the **Get Today Videos** service
+- Today s Response  
+The response is similar to the payload of the **Get Today s** service
 
 
-### Get Library Videos
+### Get Library s
 -----
 ```
-[GET] /api/videos/categories
+[GET] /api/s/categories
 ```
-This service provides the list of available categories along with a short list of videos for each category.
+This service provides the list of available categories along with a short list of s for each category.
 
 [ ] **Response**
 
-- Library Videos Response
+- Library s Response
 ```json
 {
-    "greeting": "All our video content under one roof, organized into wellness & fitness categories",
+    "greeting": "All our  content under one roof, organized into wellness & fitness categories",
     "categories": [
         {
             "code": "C1",
@@ -829,7 +829,6 @@ Some notifications include a video
 
 - Response
 ```json
-
 [
     {
         "id": 1,
@@ -844,6 +843,49 @@ Some notifications include a video
         "name": "short meditations"
     },
 ]
-
 ```
+
+
+### Get Playlist content by Identifier
+-----
+```
+[GET] /api/videos/playlists/
+```
+[ ] **Response**
+
+- Response
+```json
+{
+    "username": "jose.pleitez@gmail.com",
+    "id": 1,
+    "name": "aaa",
+    "videoItems": [
+        {
+            "previous": null,
+            "code": "YG001",
+            "next": "YG002",
+            "video": { ... }
+        },
+        {
+            "previous": "YG001",
+            "code": "YG002",
+            "next": "YG003",
+            "video": { ... }
+        },
+        {
+            "previous": "YG002",
+            "code": "YG003",
+            "next": "YG004",
+            "video": { ... }
+        },
+        {
+            "previous": "YG003",
+            "code": "YG004",
+            "next": null,
+            "video": { ... }
+        }
+    ]
+}
+```
+
 
