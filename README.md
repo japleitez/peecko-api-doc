@@ -820,7 +820,7 @@ Some notifications include a video
 
 
 
-### Get Playlists
+### Get Playlists (ids and names)
 -----
 ```
 [GET] /api/videos/playlists/
@@ -846,7 +846,7 @@ Some notifications include a video
 ```
 
 
-### Get Playlist content by Identifier
+### Get Playlist Content by Identifier
 -----
 ```
 [GET] /api/videos/playlists/
@@ -864,25 +864,25 @@ Some notifications include a video
             "previous": null,
             "code": "YG001",
             "next": "YG002",
-            "video": { ... }
+            "video": { video_YG001 }
         },
         {
             "previous": "YG001",
             "code": "YG002",
             "next": "YG003",
-            "video": { ... }
+            "video": { video_YG002 }
         },
         {
             "previous": "YG002",
             "code": "YG003",
             "next": "YG004",
-            "video": { ... }
+            "video": { video_YG003 }
         },
         {
             "previous": "YG003",
             "code": "YG004",
             "next": null,
-            "video": { ... }
+            "video": { video_YG004 }
         }
     ]
 }
