@@ -823,10 +823,11 @@ Some notifications include a video
 ```
 [PUT] /api/videos/playlists/:listId/:videoCode
 ```
-This service add the video at the end of the list
-Example: /api/videos/playlists/1/YG001
+Example: /api/videos/playlists/1/YG001   
 
 [ ] **Response**
+
+The service returns the playlist updated with the new video at the end of the list   
 
 ```json
 
@@ -900,8 +901,6 @@ Example: /api/videos/playlists/1/YG001
 [GET] /api/videos/playlists/:id
 ```
 [ ] **Response**
-
-- Response
 ```json
 {
     "username": "jose.pleitez@gmail.com",
@@ -935,5 +934,23 @@ Example: /api/videos/playlists/1/YG001
     ]
 }
 ```
+
+
+### Move video up or down in a Playlist
+-----
+```
+[PUT] /api/videos/playlists/:listId/:videoCode/:direction
+
+Where direction is 'up' or 'down'   
+
+Example
+/api/videos/playlists/1/YG001/down   
+
+[ ] **Response**
+
+This service returns the playlist with the videos re-ordered as requested.
+
+
+
 
 
