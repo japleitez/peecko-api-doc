@@ -819,13 +819,14 @@ Some notifications include a video
 ```
 
 
-### Remove Playlist   
-Deletes the a playlist by ID an returns the updated playlists   
-**Note:** requesting to delete a non-existing playlist does not raise an error, the service will retur the existing playlists   
+### Create Playlist
 -----
 ```
 [DELETE] /api/videos/playlists/:id
 ```
+This service deletes a playlist by id an returns the updated playlists.     
+**Note:** requesting to delete a non-existing playlist does not raise an error and the service returns the existing playlists.   
+
 [ ] **Response**   
 For example, the request /api/videos/playlists/2 will remove the playlist number 2 and the updated list looks like this:   
 - Response
