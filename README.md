@@ -854,8 +854,8 @@ Example: /api/videos/playlists/1/YG001
 
 [ ] **Response**
 
-The service returns the playlist updated with the new video at the end of the list   
-
+The service adds the specified video to the playlist and returns the updated playlist. The new video appears at the end of the list.   
+**Note** if you add a video that does not exist, the services does not raise an error and returns the existing playlist.   
 ```json
 
 {
