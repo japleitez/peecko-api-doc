@@ -929,12 +929,14 @@ The playlist is represented by a linked list of video nodes where:
 ```
 
 
-### Get Playlist Content by Identifier
+### Get Playlist by Identifier
 -----
 ```
 [GET] /api/videos/playlists/:id
 ```
-[ ] **Response**
+[ ] **Response**   
+**Note:** if the playlist does not exist, the service does not raise an error but returns a null body.   
+
 ```json
 {
     "username": "jose.pleitez@gmail.com",
