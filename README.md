@@ -800,7 +800,7 @@ This service returns the list of notifications sorted by release date in descent
 ```
 [PUT] /api/account/notifications/:id
 ```
-This service sets the notification's viewed to true and returns the HTTP status 200
+This service sets the notification's viewed to true and returns the HTTP status 200.   
 **Note:** if the notification does not exist, the service does not raise any error and still returns the HTTP status 200.   
 
 [ ] **Response**
