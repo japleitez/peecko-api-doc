@@ -818,6 +818,31 @@ Some notifications include a video
 
 ```
 
+
+### Delete Playlist
+-----
+```
+[DELETE] /api/videos/playlists/:id
+```
+[ ] **Response**
+It returns the updated list of playlists (id, names)   
+For example, /api/videos/playlists/2 removes the playlist 2 and the services returns something like this:   
+- Response
+```json
+
+[
+    {
+        "id": 1,
+        "name": "aaa"
+    },
+    {
+        "id": 3,
+        "name": "XXX"
+    },
+]
+```
+
+
 ### Add Video to Playlist
 -----
 ```
