@@ -766,8 +766,8 @@ HTTP Status Code 404 [NOT_FOUND]
 ```
 [GET] /api/account/notifications
 ```
-This services provides the list of the latest notifications sorted by release date in descent order,  
-Some notifications include a video
+This service returns the list of notifications sorted by release date in descent order,  
+**Note:** The notification's viewed attribute indicates whether the message has been read or not
 
 [ ] **Response**
 
@@ -775,22 +775,36 @@ Some notifications include a video
 ```json
 [
     {
+        "id": 1,
         "title": "Weloner Marathon Luxembourg ",
         "message": "The Weloner Marathon is an annual marathon by night in Luxembourg which was held for the first time in 2006",
         "image": "http://path/filename.jpg",
         "video": "http://path/filename.jpg",
-        "date": "07 Dec 2023"
+        "date": "07 Dec 2023",
+        "viewed": true
     },
     {
+        "id": 2,
         "title": "Meet Matheo, New Health Coach, We are boarding!",
         "message": "Matheo is a Wellness Coach Certified, Matheo is specialized in Healing from chronic health issues and Healing Nutrition",
         "image": "http://path/filename.jpg",
-        "video": null,
-        "date": "05 Dec 2023"
+        "video": "http://path/filename.jpg",
+        "date": "05 Dec 2023",
+        "viewed": false
     }
 ]
 ```
 
+### Set Notification as Viewed
+-----
+```
+[PUT] /api/account/notifications/:id
+```
+This service sets the notification's viewed to true and returns the HTTP status 200
+**Note:** if the notification does not exist, the service does not raise any error and still returns the HTTP status 200.   
+
+[ ] **Response**
+HTTP Status 200 OK
 
 ### Create Playlist
 -----
