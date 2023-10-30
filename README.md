@@ -833,7 +833,7 @@ HTTP Status 200 OK
 ```
 
 
-### Create Playlist
+### Remove Playlist
 -----
 ```
 [DELETE] /api/videos/playlists/:id
@@ -868,14 +868,16 @@ Example: /api/videos/playlists/1/YG001
 
 [ ] **Response**
 
-The service adds the specified video to the playlist and returns the updated playlist. The new video appears at the end of the list.   
+The service adds the specified video (by code) to the playlist (by id) and returns the updated playlist.   
+The new video appears at the end of the list.   
 **Note** if you add a video that does not exist, the services does not raise an error and returns the existing playlist.   
 
 The playlist is represented by a linked list of video nodes where:   
-- the node's code is the video reference
+- the node's code makes reference to the video's code
 - the node's previous points to the previous node in the linked list
 - the node's next points to the next node in the linked list
-**Note:** this means that the first node's previous is null and the last's next is null   
+- the node's video
+**Note:** this means that the top node.previous=null and the bottom node.next=null   
 
 ```json
 
