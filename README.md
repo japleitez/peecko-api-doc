@@ -141,7 +141,7 @@ Open the Peecko API Collection:
     "name": "Jose Pleitez",
     "username": "jose.pleitez@gmail.com",
     "password": "12345678",
-    "language": "en"
+    "language": "EN"
 }
 ```
 
@@ -354,6 +354,13 @@ Minimum validation: license must be 20 chars
 ```
 
 
+### Change Language
+-----
+
+```
+[PUT] /api/account/languages/:lang
+```
+Where :lang can be EN, FR, DE, ES
 
 
 ### Get Profile
