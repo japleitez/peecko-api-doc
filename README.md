@@ -887,10 +887,9 @@ The playlist is represented by a linked list of video nodes where:
 - the node's previous points to the previous node in the linked list
 - the node's next points to the next node in the linked list
 - the node's video
-**Note:** this means that the top node.previous=null and the bottom node.next=null   
+This means that the top node.previous=null and the bottom node.next=null   
 
 ```json
-
 {
     "username": "jose.pleitez@gmail.com",
     "id": 1,
@@ -943,7 +942,7 @@ The playlist is represented by a linked list of video nodes where:
 }
 ```
 
--- Error Response (video already added)
+- Error Response (video already added)
 ```json
 {
     "code": "ERROR",
