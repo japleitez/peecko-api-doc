@@ -362,6 +362,7 @@ Minimum validation: license must be 20 chars
 ```
 Where :lang can be EN, FR, DE, ES
 
+**Note* is an invalid language is sent then the service set EN as default
 
 ### Get Profile
 -----
