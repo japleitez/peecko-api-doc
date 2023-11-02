@@ -832,7 +832,7 @@ This service creates a new playlist
 }
 
 ```
-- Playlist Already Exists Response
+- Error Response
 ```json
 {
     "code": "ERROR",
@@ -877,9 +877,10 @@ Example: /api/videos/playlists/1/YG001
 
 [ ] **Response**
 
+- Successful Response   
+
 The service adds the specified video (by code) to the playlist (by id) and returns the updated playlist.   
 The new video appears at the end of the list.   
-**Note** if you add a video that does not exist, the services does not raise an error and returns the existing playlist.   
 
 The playlist is represented by a linked list of video nodes where:   
 - the node's code makes reference to the video's code
@@ -924,8 +925,24 @@ The playlist is represented by a linked list of video nodes where:
         },
     ]
 }
-
 ```
+
+- Error Response (playlist does not exist)
+```json
+{
+    "code": "ERROR",
+    "message": "Playlist is invalid"
+}
+```
+
+- Error Response (video does not exist)
+```json
+{
+    "code": "ERROR",
+    "message": "Video is invalid"
+}
+```
+
 
 
 ### Get Playlists (ids and names)
@@ -959,9 +976,8 @@ The playlist is represented by a linked list of video nodes where:
 ```
 [GET] /api/videos/playlists/:id
 ```
-[ ] **Response**   
-**Note:** if the playlist does not exist, the service does not raise an error but returns a null body.   
-
+[ ] **Response**
+- Successful Response
 ```json
 {
     "username": "jose.pleitez@gmail.com",
@@ -995,6 +1011,14 @@ The playlist is represented by a linked list of video nodes where:
     ]
 }
 ```
+- Error Response
+```json
+{
+    "code": "ERROR",
+    "message": "Playlist is invalid"
+}
+```
+
 
 ### Move video up or down in a Playlist
 -----
