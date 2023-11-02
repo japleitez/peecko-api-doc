@@ -1017,7 +1017,7 @@ This means that the top node.previous=null and the bottom node.next=null
     ]
 }
 ```
-- Error Response
+- Error Response (the playlist id does not exist)
 ```json
 {
     "code": "ERROR",
