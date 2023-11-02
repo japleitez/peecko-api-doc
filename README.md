@@ -943,6 +943,13 @@ The playlist is represented by a linked list of video nodes where:
 }
 ```
 
+-- Error Response (video already added)
+```json
+{
+    "code": "ERROR",
+    "message": "Video already exists in the playlist"
+}
+```
 
 
 ### Get Playlists (ids and names)
