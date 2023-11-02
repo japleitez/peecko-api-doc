@@ -814,9 +814,10 @@ HTTP Status 200 OK
 [ ] **Body**
 ```json
 {
-  "name": "short workouts",
+  "name": "Core Exercises",
 }
 ```
+This service creates a new playlist 
 
 [ ] **Response**
 
@@ -831,7 +832,15 @@ HTTP Status 200 OK
 }
 
 ```
+- Playlist Already Exists Response
+```json
+{
+    "code": "ERROR",
+    "message": "Playlist already exists"
+}
 
+```
+ 
 
 ### Remove Playlist
 -----
