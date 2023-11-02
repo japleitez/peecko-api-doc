@@ -358,11 +358,11 @@ Minimum validation: license must be 20 chars
 -----
 
 ```
-[PUT] /api/account/languages/:lang
+[PUT] /api/account/languages/{lang}
 ```
-Where :lang can be EN, FR, DE, ES
+Where {lang} can be EN, FR, DE, ES.   
 
-**Note* is an invalid language is sent then the service set EN as default
+**Note** if the language code an invalid language is sent then the service set EN as default
 
 ### Get Profile
 -----
