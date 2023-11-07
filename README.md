@@ -971,15 +971,18 @@ This means that the top node.previous=null and the bottom node.next=null
 [
     {
         "id": 1,
-        "name": "short workouts"
+        "name": "short workouts",
+        "counter": 3
     },
     {
         "id": 2,
-        "name": "intensive pilates"
+        "name": "intensive pilates",
+        "counter": 7
     },
     {
         "id": 2,
-        "name": "short meditations"
+        "name": "short meditations",
+        "counter": 1
     },
 ]
 ```
