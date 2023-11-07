@@ -1037,8 +1037,9 @@ This means that the top node.previous=null and the bottom node.next=null
 -----
 ```
 [PUT] /api/videos/playlists/{listId}/{videoCode}/drag-beneath/{newPreviousVideoCode}
+```
 
-Where
+**Where**
 {listId} refers to the playlist id   
 {videoCode} the video's code to be dragged under the {newPreviousVideoCode}   
 
@@ -1046,10 +1047,12 @@ Example 1
 /api/videos/playlists/1/HR004/drag-beneath/HR001
 In this example, the video HR004 is moved under HR001
 
-To move a video to the top, set {newPreviousVideoCode} to 'top'
+**To move a video to the top**
+Set {newPreviousVideoCode} to 'top'   
+
 Example 2
 /api/videos/playlists/1/HR004/drag-beneath/top   
-In this example, the video HR004 is moved to the top of the playlist
+In this example, the video HR004 is moved to the top of the playlist   
 
 [ ] **Response**
 This service returns the updated playlist (see Get Playlist by Id to see json format)
@@ -1075,7 +1078,8 @@ This service returns the updated playlist (see Get Playlist by Id to see json fo
 {
     "code": "ERROR",
     "message": "Video does not belong to the playlist"
-}```
+}
+```
 
 
 
