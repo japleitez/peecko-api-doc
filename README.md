@@ -985,7 +985,7 @@ This means that the top node.previous=null and the bottom node.next=null
 ```
 
 
-### Get Playlist by Identifier
+### Get Playlist by Id   
 -----
 ```
 [GET] /api/videos/playlists/:id
@@ -1041,7 +1041,7 @@ This means that the top node.previous=null and the bottom node.next=null
 
 **Where**   
 {listId} refers to the playlist id   
-{videoCode} the video's code to drag beneath the {newPreviousVideoCode}   
+{videoCode} refers to the video's code to drag beneath the {newPreviousVideoCode}   
 
 Example 1   
 /api/videos/playlists/1/HR004/drag-beneath/HR001   
@@ -1055,7 +1055,7 @@ Example 2
 In this example, the video HR004 is moved to the top of the playlist   
 
 [ ] **Response**   
-This service returns the updated playlist (see Get Playlist by Id to see json format)
+This service returns the updated playlist (see **Get Playlist by Id** to see json format)
 
 - Error Response (playlist does not exist)
 ```json
