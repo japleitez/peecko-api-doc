@@ -881,6 +881,7 @@ For example, the request /api/videos/playlists/2 will remove the playlist number
 [DELETE] /api/videos/playlists/{listId}/{videoCode}
 ```
 Example: /api/videos/playlists/1/YG001   
+In this example, the video YG001 is removed from the playlist 1   
 
 [ ] **Response**   
 The service returns the updated list.   
