@@ -1041,16 +1041,16 @@ This means that the top node.previous=null and the bottom node.next=null
 
 **Where**   
 {listId} refers to the playlist id   
-{videoCode} the video's code to drag under the {newPreviousVideoCode}   
+{videoCode} the video's code to drag beneath the {newPreviousVideoCode}   
 
-Example 1
+Example 1   
 /api/videos/playlists/1/HR004/drag-beneath/HR001   
 In this example, the video HR004 is moved under HR001   
 
 **To move a video to the top**   
 Set {newPreviousVideoCode} to 'top'   
 
-Example 2
+Example 2   
 /api/videos/playlists/1/HR004/drag-beneath/top   
 In this example, the video HR004 is moved to the top of the playlist   
 
