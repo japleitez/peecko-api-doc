@@ -995,32 +995,29 @@ This means that the top node.previous=null and the bottom node.next=null
 ```json
 {
     "username": "jose.pleitez@gmail.com",
-    "id": 1,
-    "name": "aaa",
+    "id": 2,
+    "name": "Core Exercises",
     "videoItems": [
         {
+            "index": 0,
             "previous": null,
-            "code": "YG001",
-            "next": "YG002",
-            "video": { video_YG001 }
+            "code": "HR001",
+            "next": "HR002",
+            "video": { VIDEO_HR001_JSON }
         },
         {
-            "previous": "YG001",
-            "code": "YG002",
-            "next": "YG003",
-            "video": { video_YG002 }
+            "index": 1,
+            "previous": "HR001",
+            "code": "HR002",
+            "next": "HR003",
+            "video": { VIDEO_HR002_JSON }
         },
         {
-            "previous": "YG002",
-            "code": "YG003",
-            "next": "YG004",
-            "video": { video_YG003 }
-        },
-        {
-            "previous": "YG003",
-            "code": "YG004",
+            "index": 2,
+            "previous": "HR002",
+            "code": "HR003",
             "next": null,
-            "video": { video_YG004 }
+            "video": { VIDEO_HR003_JSON }
         }
     ]
 }
