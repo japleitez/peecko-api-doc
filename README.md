@@ -875,6 +875,33 @@ For example, the request /api/videos/playlists/2 will remove the playlist number
 ]
 ```
 
+### Remove Video from Playlist
+-----
+```
+[DELETE] /api/videos/playlists/{listId}/{videoCode}
+```
+Example: /api/videos/playlists/1/YG001   
+
+[ ] **Response**   
+The service returns the updated list.   
+
+- Error Response (playlist does not exist)
+```json
+{
+    "code": "ERROR",
+    "message": "Playlist is invalid"
+}
+```
+
+- Error Response (video does not exist)
+```json
+{
+    "code": "ERROR",
+    "message": "Video is invalid"
+}
+```
+
+
 
 ### Add Video to Playlist
 -----
