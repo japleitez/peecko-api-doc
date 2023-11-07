@@ -1033,8 +1033,62 @@ This means that the top node.previous=null and the bottom node.next=null
 }
 ```
 
+### Drag video in a Playlist
+-----
+```
+[PUT] /api/videos/playlists/{listId}/{videoCode}/drag-beneath/{newPreviousVideoCode}
 
-### Move video up or down in a Playlist
+Where
+{listId} refers to the playlist id   
+{videoCode} the video's code to be dragged under the {newPreviousVideoCode}   
+
+Example 1
+/api/videos/playlists/1/HR004/drag-beneath/HR001
+In this example, the video HR004 is moved under HR001
+
+To move a video to the top, set {newPreviousVideoCode} to 'top'
+Example 2
+/api/videos/playlists/1/HR004/drag-beneath/top   
+In this example, the video HR004 is moved to the top of the playlist
+
+[ ] **Response**
+This service returns the updated playlist (see Get Playlist by Id to see json format)
+
+- Error Response (playlist does not exist)
+```json
+{
+    "code": "ERROR",
+    "message": "Playlist is invalid"
+}
+```
+
+- Error Response (videoCode does not exist)
+```json
+{
+    "code": "ERROR",
+    "message": "Video is invalid"
+}
+```
+
+-- Error Response (videoCode does not belong to the playlist)
+```json
+{
+    "code": "ERROR",
+    "message": "Video does not belong to the playlist"
+}```
+
+
+
+- Error Response (newPreviousVideoCode does not belong to the playlist)
+```json
+{
+    "code": "ERROR",
+    "message": "New previous video does not belong to the playlist"
+}
+```
+
+
+### Move selected video 1 position up or down in a Playlist
 -----
 ```
 [PUT] /api/videos/playlists/:listId/:videoCode/:direction
@@ -1046,7 +1100,7 @@ Example
 
 [ ] **Response**
 
-This service returns the playlist with the videos re-ordered as requested.
+This service returns the updated playlist (see Get Playlist by Id to see json format)
 
 
 
