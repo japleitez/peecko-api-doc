@@ -875,7 +875,7 @@ For example, the request /api/videos/playlists/2 will remove the playlist number
 ]
 ```
 
-### Remove Video from Playlist
+### Remove video from playlist
 -----
 ```
 [DELETE] /api/videos/playlists/{listId}/{videoCode}
@@ -904,7 +904,7 @@ The service returns the updated list.
 
 
 
-### Add Video to Playlist
+### Add video to playlist
 -----
 ```
 [PUT] /api/videos/playlists/:listId/:videoCode
@@ -1061,7 +1061,7 @@ This means that the top node.previous=null and the bottom node.next=null
 }
 ```
 
-### Drag video in a Playlist
+### Drag video in a playlist
 -----
 ```
 [PUT] /api/videos/playlists/{listId}/{videoCode}/drag-beneath/{newPreviousVideoCode}
