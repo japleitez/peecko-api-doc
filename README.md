@@ -875,18 +875,20 @@ For example, the request /api/videos/playlists/2 will  the playlist number 2 and
 ]
 ```
 
-### Remove video(s) from playlist
+### Remove videos from playlist
 -----
 ```
 [DELETE] /api/videos/playlists/{listId}/bulk-delete
 ```
-Example: /api/videos/playlists/1/bulk-delete
+Example: /api/videos/playlists/1/bulk-delete   
+
 [ ] **Body**
 ```json array
 ["HR002","HR003"]
 ```
 
-In this example, the video HR002 and HR003 are removed from the playlist 1
+In this example, the video HR002 and HR003 are removed from the playlist 1   
+
 **Note** no errors are raised if any of the videos is invalid (it does not exist or it does not belong to the playlist)   
 
 [ ] **Response**   
