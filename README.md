@@ -921,8 +921,9 @@ The playlist is represented by a linked list of video nodes where:
 - the node's code makes reference to the video's code
 - the node's previous points to the previous node in the linked list
 - the node's next points to the next node in the linked list
-- the node's video
-This means that the top node.previous=null and the bottom node.next=null   
+- the node's video   
+
+In the linked list, the TOP node.previous=null and the LAST node.next=null   
 
 ```json
 {
