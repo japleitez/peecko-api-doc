@@ -607,7 +607,7 @@ This service changes only the user's name, the user's email is provided as a ref
 ### Add Favorite 
 -----
 ```
-[PUT] /api/s/favorites/{-code}
+[PUT] /api/videos/favorites/{video-code}
 ```
 
 [ ] **Response**
@@ -619,7 +619,7 @@ HTTP Status Code 200 (OK)
 ###  Favorite 
 -----
 ```
-[DELETE] /api/s/favorites/{-code}
+[DELETE] /api/videos/favorites/{video-code}
 ```
 
 [ ] **Response**
@@ -631,7 +631,7 @@ HTTP Status Code 200 (OK)
 ###  All Favorite s
 -----
 ```
-[DELETE] /api/s/favorites
+[DELETE] /api/videos/favorites
 ```
 
 [ ] **Response**
@@ -644,12 +644,12 @@ HTTP Status Code 200 (OK)
 ### Get Today s [UPDATED][coach fields ed]
 -----
 ```
-[GET] /api/s/today
+[GET] /api/videos/today
 ```
 
 [ ] **Response**
 
-- Today s Response
+- Today videos Response
 ```json
 {
     "greeting": "Here is your weekly dose of Wellness support. Check back next week for more updates",
@@ -660,7 +660,7 @@ HTTP Status Code 200 (OK)
         "relax",
         "learn"
     ],
-    "s": [
+    "videos": [
         {
             "code": "YG002",
             "category": "YOGA",
@@ -691,7 +691,7 @@ HTTP Status Code 200 (OK)
 ### Get Favorite s
 -----
 ```
-[GET] /api/s/favorites
+[GET] /api/videos/favorites
 ```
 
 [ ] **Response**
@@ -703,13 +703,13 @@ The response is similar to the payload of the **Get Today s** service
 ### Get Library s
 -----
 ```
-[GET] /api/s/categories
+[GET] /api/videos/categories
 ```
 This service provides the list of available categories along with a short list of s for each category.
 
 [ ] **Response**
 
-- Library s Response
+- Library videos Response
 ```json
 {
     "greeting": "All our  content under one roof, organized into wellness & fitness categories",
