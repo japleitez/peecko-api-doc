@@ -616,7 +616,7 @@ This service changes only the user's name, the user's email is provided as a ref
 HTTP Status Code 200 (OK)
 ```
 
-### Remove Favorite 
+###  Favorite 
 -----
 ```
 [DELETE] /api/s/favorites/{-code}
@@ -628,7 +628,7 @@ HTTP Status Code 200 (OK)
 HTTP Status Code 200 (OK)
 ```
 
-### Remove All Favorite s
+###  All Favorite s
 -----
 ```
 [DELETE] /api/s/favorites
@@ -850,7 +850,7 @@ This service creates a new playlist
 ```
  
 
-### Remove Playlist
+###  Playlist
 -----
 ```
 [DELETE] /api/videos/playlists/:id
@@ -859,7 +859,7 @@ This service deletes a playlist by id an returns the updated playlists.
 **Note:** requesting to delete a non-existing playlist does not raise an error and the service returns the existing playlists.   
 
 [ ] **Response**   
-For example, the request /api/videos/playlists/2 will remove the playlist number 2 and the updated list looks like this:   
+For example, the request /api/videos/playlists/2 will  the playlist number 2 and the updated list looks like this:   
 - Response
 ```json
 
@@ -875,13 +875,19 @@ For example, the request /api/videos/playlists/2 will remove the playlist number
 ]
 ```
 
-### Remove video from playlist
+### Remove video(s) from playlist
 -----
 ```
-[DELETE] /api/videos/playlists/{listId}/{videoCode}
+[DELETE] /api/videos/playlists/{listId}/bulk-delete
 ```
-Example: /api/videos/playlists/1/YG001   
-In this example, the video YG001 is removed from the playlist 1   
+Example: /api/videos/playlists/1/bulk-delete
+[ ] **Body**
+```json array
+["HR002","HR003"]
+```
+
+In this example, the video HR002 and HR003 are removed from the playlist 1
+**Note** no errors are raised if any of the videos is invalid (it does not exist or it does not belong to the playlist)   
 
 [ ] **Response**   
 The service returns the updated list.   
@@ -893,15 +899,6 @@ The service returns the updated list.
     "message": "Playlist is invalid"
 }
 ```
-
-- Error Response (video does not exist)
-```json
-{
-    "code": "ERROR",
-    "message": "Video is invalid"
-}
-```
-
 
 
 ### Add video to playlist
