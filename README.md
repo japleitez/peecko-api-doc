@@ -700,12 +700,12 @@ HTTP Status Code 200 (OK)
 The response is similar to the payload of the **Get Today s** service
 
 
-### Get Library s
+### Get Library Videos
 -----
 ```
 [GET] /api/videos/categories
 ```
-This service provides the list of available categories along with a short list of s for each category.
+This service provides the list of available categories along with a short list of videos for each category.
 
 [ ] **Response**
 
