@@ -329,7 +329,7 @@ For now, valid license must:
 }
 ```
 
-### De-Activate Membership
+### De-Activate Membership (this service exists in the mock API but not in the implementation API)
 -----
 You can deactivate a license using this backdoor service (no need of token and it will be available only during development time)   
 Minimum validation: license must be 20 chars 
