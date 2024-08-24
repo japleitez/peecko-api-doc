@@ -469,7 +469,7 @@ HTTP Status Code 400 (the username is invalid)
 ```
 
 
-### Reset Password [UPDATED] [endpoint renamed]
+### Reset Password
 -----
 
 ```
@@ -641,7 +641,7 @@ HTTP Status Code 200 (OK)
 ```
 
 
-### Get Today s [UPDATED][coach fields ed]
+### Get Today's Videos
 -----
 ```
 [GET] /api/videos/today
