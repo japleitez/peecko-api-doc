@@ -408,12 +408,12 @@ membership-sponsor-logo: if the url is empty then display the default logo used 
 ```
 
 
-### Get Verification Code (first step to change password)
+### Get Verification Code (first step to RESET password because the user forgot its password)
 -----
 This service does two things:
 - returns a  request id  
 - sends a verification code to the email specified in the request's body (<b>for now, the verification code is fixed 1234</b>)
-These two pieces of information will be required to change the user's password in the last step
+These two pieces of information will be required to reset the user's password in the last step
 ```
 [POST] /api/auth/pincode
 ```
@@ -438,7 +438,7 @@ HTTP Status Code 400 (the username is invalid)
 ```
 
 
-### Verify Activation Code (second step to change password)
+### Verify Activation Code (second step to reset password)
 -----
 
 ```
