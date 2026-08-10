@@ -49,24 +49,20 @@ Returns all wellness categories.
   ],
 }
 ```
-> `description` is a one-line blurb shown under a section header — kept as plain text, not HTML.
 
 ---
 
 ## 2. Articles
 
-Backs the Home carousels/chips list, the Reader screen, and the Player screen.
-
 ### `GET /api/articles`
-List articles, optionally filtered.
+List of filtered wellness articles
 
 **Query params**
 
 | Param | Values | Notes |
 |---|---|---|
 | `category` | category id (e.g. `nut`) | filters to one category |
-| `shelf` | `saved` \| `listened` \| `finished` | filters to the current user's library shelf |
-| `sort` | `recommended` (default) | ordering used by the "Recommended" chip |
+| `shelf` | `recommended` (default) \| `saved` \| `listened` \| `finished` | filters to the current user's library shelf |
 
 **Response 200**
 ```json
@@ -79,14 +75,13 @@ List articles, optionally filtered.
       "dek": "The anabolic window is wider and duller than the supplement aisle suggests.",
       "authorName": "Dr. Ana Reyes",
       "readTimeMinutes": 9,
-      "heroImageUrl": null,
-      "isSaved": false
+      "imageUrl": null,
+      "isSaved": false,
     }
   ],
   "meta": { "count": 11 }
 }
 ```
-> `heroImageUrl: null` tells the client to render the category-color gradient placeholder (the "photo slot" pattern in the mockup) instead of a photo. List items intentionally omit `bodyHtml` — fetch `GET /api/articles/{articleId}` for full content.
 
 ### `GET /api/articles/{articleId}`
 Full article for the Reader screen.
