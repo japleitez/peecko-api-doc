@@ -1,6 +1,6 @@
 # Backend API Documentation — Wellness Reader
 
-**Source:** `Wellness Reader.html` mockup (Home, Reader, Player, Account, Library, Legal, Language, Support)
+**Source:** `Wellness Tab` mockup
 **Base path:** every endpoint is prefixed with `/api/`
 **Principle:** no user-facing text is hardcoded in the client — article copy, category names, legal content, FAQ text, and language labels are all served by these endpoints so they can be edited/localized without an app release.
 
@@ -18,7 +18,7 @@
   ```
 - **Dates/times:** ISO 8601 strings (`"2026-08-01T00:00:00Z"`).
 - **Text vs. HTML fields:** short UI labels (titles, deks, names, questions, category blurbs) are returned as plain strings. Long-form content — article bodies, legal document sections, FAQ answers — is returned as **HTML strings inside JSON** (field names end in `Html`, e.g. `bodyHtml`). This lets editors add basic formatting (bold, links, lists) from the CMS without a schema change.
-  - Allowed tags are limited to a safe subset: `p, br, strong, em, ul, ol, li, a`.
+  - Allowed Html tags are limited to a safe subset: `p, br, strong, em, ul, ol, li, a`.
   - The client must render these fields through a sanitizing HTML renderer (e.g. a vetted rich-text component) — never inject them into the DOM unsanitized.
 
 ---
@@ -27,7 +27,7 @@
 
 Backs the four category tiles/carousels on Home and the category chips in Library.
 
-### `GET /api/categories`
+### `GET /api/wellness`
 Returns all wellness categories.
 
 **Response 200**
@@ -37,23 +37,16 @@ Returns all wellness categories.
     {
       "id": "nut",
       "name": "Nutrition",
-      "shortName": "Nutrition",
       "description": "What you eat, when you eat it, and which claims survive contact with evidence.",
-      "accentColor": "oklch(0.60 0.11 130)",
-      "accentColorDark": "oklch(0.40 0.08 132)",
-      "articleCount": 3
+      "count": 3
     },
     {
       "id": "neuro",
-      "name": "Neurological & Hormonal Health",
-      "shortName": "Neuro & Hormonal",
+      "name": "Neuro & Hormonal",
       "description": "Sleep, stress, mood and the chemical signals that keep them in conversation.",
-      "accentColor": "oklch(0.60 0.11 300)",
-      "accentColorDark": "oklch(0.40 0.08 300)",
-      "articleCount": 2
+      "count": 2
     }
   ],
-  "meta": { "count": 4 }
 }
 ```
 > `description` is a one-line blurb shown under a section header — kept as plain text, not HTML.
