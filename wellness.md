@@ -62,7 +62,7 @@ List of filtered wellness articles
 | Param | Values | Notes |
 |---|---|---|
 | `category` | category id (e.g. `nut`) | filters to one category |
-| `shelf` | `recommended` (default) \| `saved` \| `listened` \| `finished` | filters to the current user's library shelf |
+| `shelf` | `recommended`  \| `saved` \| `listened` \| `finished` | filters to the current user's library shelf |
 
 **Response 200**
 ```json
@@ -142,112 +142,26 @@ Update reading or listening progress (drives the reader's scroll-progress bar an
 
 ---
 
-## 3. Library
+## 3. Wellness Shelf Library
 
-Backs the Library chips (Recommended / category / Saved / In progress / Finished) on Home.
+Backs the Wellness user's shelf library (Recommended / category / Saved / In progress / Finished).
 
-### `GET /api/library/{shelf}`
-`shelf` = `saved` | `listened` | `finished`.
+### `GET /api/wellness/{shelf}`
+`shelf` = `recommended` | `saved` | `listened` | `finished`.
 
 **Response 200**
 ```json
 {
   "data": [
-    { "id": "cell-1", "categoryId": "cell", "title": "Autophagy After Dark", "readTimeMinutes": 8, "categoryShortName": "Cellular" },
-    { "id": "imm-1", "categoryId": "imm", "title": "The Vaccine Memory Effect", "readTimeMinutes": 7, "categoryShortName": "Immune & Prevention" }
+    { "id": "cell-1", "categoryId": "cell", "title": "Autophagy After Dark", "readTimeMinutes": 8, "categoryName": "Cellular" },
+    { "id": "imm-1", "categoryId": "imm", "title": "The Vaccine Memory Effect", "readTimeMinutes": 7, "categoryName": "Immune & Prevention" }
   ],
-  "meta": { "count": 2 }
 }
 ```
 
 ---
 
-## 4. Account
-
-Backs the Account screen (sponsor card + profile) and User Account sub-screen.
-
-### `GET /api/account`
-**Response 200**
-```json
-{
-  "data": {
-    "displayName": "Mira",
-    "sponsorName": "Meridian Health Partners",
-    "sponsorMessage": "Your membership is sponsored by your employer, and it is valid until 31-12-2026.",
-    "licenseNumber": "4821 3390 5567 1042 8873",
-    "membershipValidUntil": "2026-12-31"
-  }
-}
-```
-> `sponsorMessage` is a single-line status string — kept as plain text.
-
-### `GET /api/account/profile`
-**Response 200**
-```json
-{
-  "data": { "name": "Mira Alston", "email": "mira.alston@example.com", "avatarUrl": null }
-}
-```
-
-### `PATCH /api/account/profile`
-**Request body**
-```json
-{ "name": "Mira Alston", "email": "mira.alston@example.com" }
-```
-**Response 200** — updated profile object, same shape as above.
-
-### `POST /api/account/change-password`
-**Request body**
-```json
-{ "currentPassword": "••••••••", "newPassword": "••••••••" }
-```
-**Response 204** — no body.
-
-### `DELETE /api/account`
-Deletes the user's account (destructive action in User Account screen).
-
-**Response 202**
-```json
-{ "data": { "status": "deletion_scheduled", "effectiveAt": "2026-08-17T00:00:00Z" } }
-```
-
-### `POST /api/account/logout`
-**Response 204** — no body.
-
----
-
-## 5. Reader & language preferences
-
-Backs the Aa panel (theme/size/typeface — device-local, not listed here) and the Language screen (server-persisted since it affects content localization).
-
-### `GET /api/languages`
-**Public.** Supported app languages.
-
-**Response 200**
-```json
-{
-  "data": [
-    { "code": "en", "label": "English" },
-    { "code": "de", "label": "German" },
-    { "code": "fr", "label": "French" },
-    { "code": "es", "label": "Spanish" }
-  ]
-}
-```
-
-### `PUT /api/account/language`
-**Request body**
-```json
-{ "code": "de" }
-```
-**Response 200**
-```json
-{ "data": { "code": "de", "label": "German" } }
-```
-
----
-
-## 6. Support
+## 4. Support
 
 Backs the Support screen's FAQ list.
 
