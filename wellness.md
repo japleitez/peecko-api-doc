@@ -26,8 +26,8 @@
 ## 1. Wellness Categories
 
 The Wellness Tab contains 
-- 4 fixed chips: Recommended, Saved, In progress, and Finished
-- A dynamic list of wellness category chips provided by the backend API (like Nutrition, Cellular, Neuro & Hormonal, etc.)
+- 4 fixed chips: Recommended, Saved, In progress, and Finished.
+- A dynamic list of wellness categories (for example: Nutrition, Cellular, Neuro & Hormonal, etc.)
 
 ### `GET /api/wellness`
 Returns all wellness categories.
@@ -94,7 +94,6 @@ Full article for the Reader screen.
     "categoryId": "nut",
     "title": "Protein Timing, Honestly",
     "dek": "The anabolic window is wider and duller than the supplement aisle suggests.",
-    "authorName": "Dr. Ana Reyes",
     "readTimeMinutes": 9,
     "heroImageUrl": null,
     "isSaved": false,
@@ -113,8 +112,7 @@ Player metadata — narration is generated to match `readTimeMinutes`, per the a
   "data": {
     "articleId": "nut-1",
     "audioUrl": "https://cdn.wellnessreader.example/narration/nut-1.m4a",
-    "durationSeconds": 540,
-    "voice": "editorial-female-1"
+    "durationSeconds": 540
   }
 }
 ```
