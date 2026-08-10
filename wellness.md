@@ -23,9 +23,11 @@
 
 ---
 
-## 1. Categories
+## 1. Wellness Categories
 
-Backs the four category tiles/carousels on Home and the category chips in Library.
+The Wellness Tab contains 
+- 4 fixed chips: Recommended, Saved, In progress, and Finished
+- A dynamic list of wellness category chips provided by the backend API (like Nutrition, Cellular, Neuro & Hormonal, etc.)
 
 ### `GET /api/wellness`
 Returns all wellness categories.
@@ -37,13 +39,11 @@ Returns all wellness categories.
     {
       "id": "nut",
       "name": "Nutrition",
-      "description": "What you eat, when you eat it, and which claims survive contact with evidence.",
       "count": 3
     },
     {
       "id": "neuro",
-      "name": "Neuro & Hormonal",
-      "description": "Sleep, stress, mood and the chemical signals that keep them in conversation.",
+      "name": "Cellular",
       "count": 2
     }
   ],
