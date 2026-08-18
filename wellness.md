@@ -30,7 +30,7 @@ The Wellness Tab contains
 - A dynamic list of wellness categories (for example: Nutrition, Cellular, Neuro & Hormonal, etc.)
 
 ### `GET /api/wellness`
-Returns all wellness categories.
+Returns all wellness categories and shelf chips.
 
 **Response 200**
 ```json
@@ -39,12 +39,20 @@ Returns all wellness categories.
     {
       "id": "nut",
       "name": "Nutrition",
-      "count": 3
+      "type": "category", 
+      "count": 20
     },
     {
       "id": "neuro",
       "name": "Cellular",
-      "count": 2
+      "type": "category", 
+      "count": 15
+    }
+    {
+      "id": "saved",
+      "name": "Saved",
+      "type": "shelf", 
+      "count": 3
     }
   ],
 }
